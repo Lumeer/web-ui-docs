@@ -1,0 +1,743 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>UserMenuComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>user-menu</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>user-menu.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-menu.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#buildNumber">buildNumber</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentUser$">currentUser$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#locale">locale</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#url$">url$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onFeedbackClick">onFeedbackClick</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onLogoutClick">onLogoutClick</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                                <span class="modifier">Public</span>
+                        <code>constructor(authService: <a href="../injectables/AuthService.html">AuthService</a>, dialogService: <a href="../injectables/DialogService.html">DialogService</a>, store: <a href="../interfaces/AppState.html">Store<AppState></a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../interfaces/AppState.html" target="_self" >Store&lt;AppState&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onFeedbackClick"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onFeedbackClick
+                            </b>
+                            <a href="#onFeedbackClick"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onFeedbackClick()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onLogoutClick"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onLogoutClick
+                            </b>
+                            <a href="#onLogoutClick"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onLogoutClick()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="buildNumber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Readonly</span>
+                            buildNumber
+                            </b>
+                            <a href="#buildNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>buildNumber:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.buildNumber</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUser$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            currentUser$
+                            </b>
+                            <a href="#currentUser$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>currentUser$:     <code><a href="../interfaces/UserModel.html" target="_self" >Observable&lt;UserModel&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/UserModel.html" target="_self" >Observable&lt;UserModel&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locale"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Readonly</span>
+                            locale
+                            </b>
+                            <a href="#locale"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>locale:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.locale</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="url$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            url$
+                            </b>
+                            <a href="#url$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>url$:     <code>Observable&lt;string&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;string&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/shared/top-panel/user-panel/user-menu/user-menu.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {ChangeDetectionStrategy, Component} from &#x27;@angular/core&#x27;;
+import {select, Store} from &#x27;@ngrx/store&#x27;;
+import {Observable} from &#x27;rxjs&#x27;;
+import {UserModel} from &#x27;src/app/core/store/users/user.model&#x27;;
+import {environment} from &#x27;../../../../../environments/environment&#x27;;
+import {AuthService} from &#x27;../../../../auth/auth.service&#x27;;
+import {AppState} from &#x27;../../../../core/store/app.state&#x27;;
+import {selectUrl} from &#x27;../../../../core/store/navigation/navigation.state&#x27;;
+import {DialogService} from &#x27;../../../../dialog/dialog.service&#x27;;
+import {selectCurrentUser} from &#x27;./../../../../core/store/users/users.state&#x27;;
+
+@Component({
+  selector: &#x27;user-menu&#x27;,
+  templateUrl: &#x27;./user-menu.component.html&#x27;,
+  styleUrls: [&#x27;./user-menu.component.scss&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class UserMenuComponent {
+  public readonly buildNumber &#x3D; environment.buildNumber;
+  public readonly locale &#x3D; environment.locale;
+
+  public currentUser$: Observable&lt;UserModel&gt;;
+  public url$: Observable&lt;string&gt;;
+
+  public constructor(
+    private authService: AuthService,
+    private dialogService: DialogService,
+    private store: Store&lt;AppState&gt;
+  ) {}
+
+  public ngOnInit() {
+    this.currentUser$ &#x3D; this.store.pipe(select(selectCurrentUser));
+    this.url$ &#x3D; this.store.pipe(select(selectUrl));
+  }
+
+  public onFeedbackClick() {
+    this.dialogService.openFeedbackDialog();
+  }
+
+  public onLogoutClick() {
+    this.authService.logout();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;dropdown show ml-2&quot;&gt;
+  &lt;a href&#x3D;&quot;#&quot;
+     role&#x3D;&quot;button&quot;
+     id&#x3D;&quot;profileDropdownLink&quot;
+     data-toggle&#x3D;&quot;dropdown&quot;
+     aria-haspopup&#x3D;&quot;true&quot;
+     aria-expanded&#x3D;&quot;false&quot;
+     class&#x3D;&quot;text-primary&quot;&gt;
+    &lt;i class&#x3D;&quot;fa fa-user-circle fa-3x&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+
+  &lt;div class&#x3D;&quot;dropdown-menu dropdown-menu-right profile-dropdown&quot;
+       aria-labelledby&#x3D;&quot;profileDropdownLink&quot;&gt;
+    &lt;a *ngIf&#x3D;&quot;locale !&#x3D;&#x3D; &#x27;cs&#x27;&quot;
+       [href]&#x3D;&quot;url$ | async | languageLink:&#x27;cs&#x27;&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       title&#x3D;&quot;Čeština&quot;&gt;
+      &lt;span class&#x3D;&quot;flag-icon flag-icon-cz&quot;&gt;&lt;/span&gt;
+      &lt;span&gt;Čeština&lt;/span&gt;
+      (&lt;span i18n&#x3D;&quot;@@language.czech&quot;&gt;Czech&lt;/span&gt;)
+    &lt;/a&gt;
+    &lt;a *ngIf&#x3D;&quot;locale !&#x3D;&#x3D; &#x27;en&#x27;&quot;
+       [href]&#x3D;&quot;url$ | async | languageLink:&#x27;en&#x27;&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       title&#x3D;&quot;English&quot;&gt;
+      &lt;span class&#x3D;&quot;flag-icon flag-icon-gb&quot;&gt;&lt;/span&gt;
+      &lt;span&gt;English&lt;/span&gt;
+      (&lt;span i18n&#x3D;&quot;@@language.english&quot;&gt;English&lt;/span&gt;)
+    &lt;/a&gt;
+    &lt;div class&#x3D;&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+    &lt;a (click)&#x3D;&quot;onFeedbackClick()&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       title&#x3D;&quot;Send feedback&quot;
+       i18n-title&#x3D;&quot;@@menu.sendFeedback&quot;&gt;
+      &lt;i class&#x3D;&quot;far fa-fw fa-comment&quot;
+         data-fa-transform&#x3D;&quot;left-4&quot;
+         aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;
+      &lt;span i18n&#x3D;&quot;@@menu.sendFeedback&quot;&gt;Send Feedback&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class&#x3D;&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+    &lt;span *ngIf&#x3D;&quot;currentUser$ | async as currentUser&quot;
+          class&#x3D;&quot;dropdown-item-text text-secondary&quot;&gt;
+      {{ currentUser.email }}
+    &lt;/span&gt;
+    &lt;a *ngIf&#x3D;&quot;false&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       title&#x3D;&quot;Account&quot;
+       i18n-title&#x3D;&quot;@@menu.account&quot;&gt;
+      &lt;i class&#x3D;&quot;fas fa-fw fa-user&quot;
+         data-fa-transform&#x3D;&quot;left-4&quot;
+         aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;
+      &lt;span i18n&#x3D;&quot;@@menu.account&quot;&gt;Account&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a (click)&#x3D;&quot;onLogoutClick()&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       title&#x3D;&quot;Log out&quot;
+       i18n-title&#x3D;&quot;@@menu.logout&quot;&gt;
+      &lt;i class&#x3D;&quot;fas fa-fw fa-sign-in&quot;
+         data-fa-transform&#x3D;&quot;left-4&quot;
+         aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;
+      &lt;span i18n&#x3D;&quot;@@menu.logout&quot;&gt;Logout&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;buildNumber&quot;&gt;
+      &lt;div class&#x3D;&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+      &lt;small class&#x3D;&quot;dropdown-header py-0&quot;&gt;Build #{{buildNumber}}&lt;/small&gt;
+    &lt;/ng-container&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="dropdown show ml-2">  <a href="#"     role="button"     id="profileDropdownLink"     data-toggle="dropdown"     aria-haspopup="true"     aria-expanded="false"     class="text-primary">    <i class="fa fa-user-circle fa-3x"></i>  </a>  <div class="dropdown-menu dropdown-menu-right profile-dropdown"       aria-labelledby="profileDropdownLink">    <a *ngIf="locale !== \'cs\'"       [href]="url$ | async | languageLink:\'cs\'"       class="dropdown-item"       title="Čeština">      <span class="flag-icon flag-icon-cz"></span>      <span>Čeština</span>      (<span i18n="@@language.czech">Czech</span>)    </a>    <a *ngIf="locale !== \'en\'"       [href]="url$ | async | languageLink:\'en\'"       class="dropdown-item"       title="English">      <span class="flag-icon flag-icon-gb"></span>      <span>English</span>      (<span i18n="@@language.english">English</span>)    </a>    <div class="dropdown-divider"></div>    <a (click)="onFeedbackClick()"       class="dropdown-item"       title="Send feedback"       i18n-title="@@menu.sendFeedback">      <i class="far fa-fw fa-comment"         data-fa-transform="left-4"         aria-hidden="true"></i>&nbsp;      <span i18n="@@menu.sendFeedback">Send Feedback</span>    </a>    <div class="dropdown-divider"></div>    <span *ngIf="currentUser$ | async as currentUser"          class="dropdown-item-text text-secondary">      {{ currentUser.email }}    </span>    <a *ngIf="false"       class="dropdown-item"       title="Account"       i18n-title="@@menu.account">      <i class="fas fa-fw fa-user"         data-fa-transform="left-4"         aria-hidden="true"></i>&nbsp;      <span i18n="@@menu.account">Account</span>    </a>    <a (click)="onLogoutClick()"       class="dropdown-item"       title="Log out"       i18n-title="@@menu.logout">      <i class="fas fa-fw fa-sign-in"         data-fa-transform="left-4"         aria-hidden="true"></i>&nbsp;      <span i18n="@@menu.logout">Logout</span>    </a>    <ng-container *ngIf="buildNumber">      <div class="dropdown-divider"></div>      <small class="dropdown-header py-0">Build #{{buildNumber}}</small>    </ng-container>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AgreementComponent', 'selector': 'agreement'},{'name': 'AppComponent', 'selector': 'lmr-app'},{'name': 'AttributeConditionComponent', 'selector': 'attribute-condition'},{'name': 'AttributeValueComponent', 'selector': 'attribute-value'},{'name': 'AuthCallbackComponent', 'selector': 'auth-callback'},{'name': 'ChartConfigComponent', 'selector': 'chart-config'},{'name': 'ChartPerspectiveComponent', 'selector': 'chart-perspective'},{'name': 'ChartVisualizationComponent', 'selector': 'chart-visualization'},{'name': 'CollapsibleSidebarComponent', 'selector': 'collapsible-sidebar'},{'name': 'CollapsibleSidebarToggleComponent', 'selector': 'collapsible-sidebar-toggle'},{'name': 'CollectionAttributesComponent', 'selector': ''},{'name': 'CollectionLinkTypesComponent', 'selector': ''},{'name': 'CollectionNameInputComponent', 'selector': 'collection-name-input'},{'name': 'CollectionSettingsComponent', 'selector': ''},{'name': 'CollectionUsersComponent', 'selector': ''},{'name': 'ColorPickerComponent', 'selector': 'color-picker'},{'name': 'CommentsComponent', 'selector': 'comments'},{'name': 'ConditionSuggestionsComponent', 'selector': 'condition-suggestions'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ControlsToggleComponent', 'selector': 'controls-toggle'},{'name': 'CreateCollectionDialogComponent', 'selector': 'create-collection-dialog'},{'name': 'CreateLinkDialogComponent', 'selector': 'create-link-dialog'},{'name': 'CreateResourceDialogComponent', 'selector': 'create-resource-dialog'},{'name': 'DetailPerspectiveComponent', 'selector': 'detail-perspective'},{'name': 'DialogBaseComponent', 'selector': 'dialog-base'},{'name': 'DialogWrapperComponent', 'selector': 'dialog-wrapper'},{'name': 'DocumentDetailComponent', 'selector': 'document-detail'},{'name': 'DocumentHintsComponent', 'selector': 'document-hints'},{'name': 'EmptyCollectionsComponent', 'selector': 'empty-collections'},{'name': 'EmptyDataComponent', 'selector': 'empty-data'},{'name': 'EmptyDocumentsComponent', 'selector': 'empty-documents'},{'name': 'EmptyMapComponent', 'selector': 'empty-map'},{'name': 'EmptyPostItsComponent', 'selector': 'empty-post-its'},{'name': 'EmptyRecordsComponent', 'selector': 'empty-records'},{'name': 'EmptySearchComponent', 'selector': 'empty-search'},{'name': 'EmptyStateComponent', 'selector': 'empty-state'},{'name': 'EmptyViewsComponent', 'selector': 'empty-views'},{'name': 'FeedbackDialogComponent', 'selector': 'feedback-dialog'},{'name': 'FilterBoxComponent', 'selector': 'filter-box'},{'name': 'GroupsSuggestionsComponent', 'selector': 'group-suggestions'},{'name': 'HomeComponent', 'selector': ''},{'name': 'IconComponent', 'selector': 'icon-chooser'},{'name': 'IconPickerComponent', 'selector': 'icon-picker'},{'name': 'IconsPresenterComponent', 'selector': 'icons-presenter'},{'name': 'InputBoxComponent', 'selector': 'input-box'},{'name': 'InvalidQueryComponent', 'selector': 'invalid-query'},{'name': 'KeyValueComponent', 'selector': 'key-value'},{'name': 'LinkNameInputComponent', 'selector': 'link-name-input'},{'name': 'LinkTypeComponent', 'selector': '[link-type]'},{'name': 'LinksComponent', 'selector': 'links'},{'name': 'LinksListComponent', 'selector': 'links-list'},{'name': 'LinksListTableBodyComponent', 'selector': '[links-list-table-body]'},{'name': 'LinksListTableComponent', 'selector': 'links-list-table'},{'name': 'LinksListTableHeaderComponent', 'selector': '[links-list-table-header]'},{'name': 'LinksListTabsComponent', 'selector': 'links-list-tabs'},{'name': 'LogoutComponent', 'selector': 'logout'},{'name': 'LumeerLogoComponent', 'selector': 'lumeer-logo'},{'name': 'MapAttributeGroupComponent', 'selector': 'map-attribute-group'},{'name': 'MapAttributeSelectComponent', 'selector': 'map-attribute-select'},{'name': 'MapContentComponent', 'selector': 'map-content'},{'name': 'MapPanelComponent', 'selector': 'map-panel'},{'name': 'MapPerspectiveComponent', 'selector': 'map-perspective'},{'name': 'MapRenderComponent', 'selector': 'map-render'},{'name': 'NewUserComponent', 'selector': 'new-user'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OrganizationDetailComponent', 'selector': ''},{'name': 'OrganizationGroupsComponent', 'selector': ''},{'name': 'OrganizationRegistrationComponent', 'selector': ''},{'name': 'OrganizationSettingsComponent', 'selector': ''},{'name': 'OrganizationUsersComponent', 'selector': ''},{'name': 'OverwriteViewDialogComponent', 'selector': 'overwrite-view-dialog'},{'name': 'PaymentsListComponent', 'selector': 'payments-list'},{'name': 'PaymentsOrderComponent', 'selector': 'payments-order'},{'name': 'PaymentsPanelComponent', 'selector': 'payments-panel'},{'name': 'PaymentsStateComponent', 'selector': 'payments-state'},{'name': 'PostItAddDocumentComponent', 'selector': 'add-document'},{'name': 'PostItCollectionAddButtonComponent', 'selector': 'post-it-collection-add-button'},{'name': 'PostItCollectionComponent', 'selector': 'post-it-collection'},{'name': 'PostItCollectionImportButtonComponent', 'selector': 'post-it-collection-import-button'},{'name': 'PostItCollectionNameComponent', 'selector': 'post-it-collection-name'},{'name': 'PostItCollectionsComponent', 'selector': 'post-it-collections'},{'name': 'PostItDocumentCellComponent', 'selector': 'post-it-document-cell'},{'name': 'PostItDocumentComponent', 'selector': 'post-it-document'},{'name': 'PostItDocumentHeaderComponent', 'selector': 'post-it-document-header'},{'name': 'PostItPerspectiveComponent', 'selector': 'post-it-perspective'},{'name': 'PreviewResultsComponent', 'selector': 'preview-results'},{'name': 'PreviewResultsTableComponent', 'selector': 'preview-results-table'},{'name': 'PreviewResultsTabsComponent', 'selector': 'preview-results-tabs'},{'name': 'ProjectSettingsComponent', 'selector': ''},{'name': 'ProjectUsersComponent', 'selector': ''},{'name': 'QueryItemComponent', 'selector': 'query-item'},{'name': 'ResourceChooserComponent', 'selector': 'resource-chooser'},{'name': 'ResourceCodeInputComponent', 'selector': 'resource-code-input'},{'name': 'ResourceDetailComponent', 'selector': 'resource-detail'},{'name': 'ResourceHeaderComponent', 'selector': 'resource-header'},{'name': 'ResourceListComponent', 'selector': 'resource-list'},{'name': 'ResourceMenuComponent', 'selector': 'resource-menu'},{'name': 'ResourceNameInputComponent', 'selector': 'resource-name-input'},{'name': 'ResourcePostItComponent', 'selector': 'resource-post-it'},{'name': 'ResourceStatusLineComponent', 'selector': 'resource-status-line'},{'name': 'SearchAllComponent', 'selector': ''},{'name': 'SearchBoxComponent', 'selector': 'search-box'},{'name': 'SearchButtonComponent', 'selector': 'search-button'},{'name': 'SearchCollectionsComponent', 'selector': ''},{'name': 'SearchDocumentHeaderComponent', 'selector': 'search-document-header'},{'name': 'SearchDocumentsComponent', 'selector': 'search-documents'},{'name': 'SearchInputComponent', 'selector': 'search-input'},{'name': 'SearchLinksComponent', 'selector': ''},{'name': 'SearchPerspectiveComponent', 'selector': ''},{'name': 'SearchSuggestionsComponent', 'selector': 'search-suggestions'},{'name': 'SearchViewsComponent', 'selector': 'search-views'},{'name': 'SelectItemComponent', 'selector': 'select-item'},{'name': 'SessionExpiredComponent', 'selector': 'session-expired'},{'name': 'ShareUserComponent', 'selector': '[share-user]'},{'name': 'ShareViewCopyComponent', 'selector': 'share-view-copy'},{'name': 'ShareViewDialogComponent', 'selector': 'share-view-dialog'},{'name': 'ShareViewInputComponent', 'selector': 'share-view-input'},{'name': 'SizeSliderComponent', 'selector': 'size-slider'},{'name': 'SliderComponent', 'selector': 'slider'},{'name': 'SuggestionItemComponent', 'selector': 'search-suggestion-item'},{'name': 'TableAttributeSuggestionsComponent', 'selector': 'table-attribute-suggestions'},{'name': 'TableBodyComponent', 'selector': 'table-body'},{'name': 'TableCaptionComponent', 'selector': 'table-caption'},{'name': 'TableCellGroupComponent', 'selector': 'table-cell-group'},{'name': 'TableCollapsedCellComponent', 'selector': 'table-collapsed-cell'},{'name': 'TableCollapsedCellMenuComponent', 'selector': 'table-collapsed-cell-menu'},{'name': 'TableColumnContextMenuComponent', 'selector': 'table-column-context-menu'},{'name': 'TableColumnGroupComponent', 'selector': 'table-column-group'},{'name': 'TableDataCellComponent', 'selector': 'table-data-cell'},{'name': 'TableDataCellMenuComponent', 'selector': 'table-data-cell-menu'},{'name': 'TableHeaderAddButtonComponent', 'selector': 'table-header-add-button'},{'name': 'TableHeaderCollectionComponent', 'selector': 'table-header-collection'},{'name': 'TableHeaderComponent', 'selector': 'table-header'},{'name': 'TableHeaderLinkComponent', 'selector': 'table-header-link'},{'name': 'TableHiddenColumnComponent', 'selector': 'table-hidden-column'},{'name': 'TableHierarchyCellComponent', 'selector': 'table-hierarchy-cell'},{'name': 'TableHierarchyCellMenuComponent', 'selector': 'table-hierarchy-cell-menu'},{'name': 'TableHierarchyColumnComponent', 'selector': 'table-hierarchy-column'},{'name': 'TableLinkCellComponent', 'selector': 'table-link-cell'},{'name': 'TableLinkInfoComponent', 'selector': 'table-link-info'},{'name': 'TableLinkedRowComponent', 'selector': 'table-linked-row'},{'name': 'TableLinkedRowsComponent', 'selector': 'table-linked-rows'},{'name': 'TablePerspectiveComponent', 'selector': 'table-perspective'},{'name': 'TablePrimaryRowComponent', 'selector': 'table-primary-row'},{'name': 'TableRowGroupComponent', 'selector': 'table-row-group'},{'name': 'TableRowGroupFooterComponent', 'selector': 'table-row-group-footer'},{'name': 'TableRowGroupHeaderComponent', 'selector': 'table-row-group-header'},{'name': 'TableRowNumbersComponent', 'selector': 'table-row-numbers'},{'name': 'TableRowsComponent', 'selector': 'table-rows'},{'name': 'TableSingleColumnComponent', 'selector': 'table-single-column'},{'name': 'TagComponent', 'selector': 'tag'},{'name': 'TopPanelComponent', 'selector': 'top-panel'},{'name': 'TopPanelWrapperComponent', 'selector': 'top-panel-wrapper'},{'name': 'UserComponent', 'selector': '[user]'},{'name': 'UserGroupsComponent', 'selector': 'user-groups'},{'name': 'UserListComponent', 'selector': 'user-list'},{'name': 'UserMenuComponent', 'selector': 'user-menu'},{'name': 'UserPanelComponent', 'selector': 'user-panel'},{'name': 'UsersComponent', 'selector': 'users'},{'name': 'ViewComponent', 'selector': ''},{'name': 'ViewControlsComponent', 'selector': 'view-controls'},{'name': 'ViewDetailComponent', 'selector': 'view-detail'},{'name': 'ViewLoadingComponent', 'selector': 'view-loading'},{'name': 'WorkspaceChooserComponent', 'selector': 'workspace-chooser'},{'name': 'WorkspacePanelComponent', 'selector': 'workspace-panel'}];
+    var DIRECTIVES = [{'name': 'DraggableDirective', 'selector': '[lmrDraggable]'},{'name': 'DropTargetDirective', 'selector': '[lmrDropTarget]'},{'name': 'LayoutItemDirective', 'selector': '[layout-item]'},{'name': 'NgVarDirective', 'selector': '[ngVar]'},{'name': 'PerspectiveDirective', 'selector': '[perspective]'},{'name': 'RemovePlaceholderOnFocusDirective', 'selector': '[remove-placeholder-on-focus]'},{'name': 'SearchResultsDirective', 'selector': '[search-results]'},{'name': 'TableEditableCellDirective', 'selector': '[tableEditableCell]'},{'name': 'TrimValueAccessor', 'selector': 'input[trim], textarea[trim], div[trim]'}];
+    var ACTUAL_COMPONENT = {'name': 'UserMenuComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserMenuComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

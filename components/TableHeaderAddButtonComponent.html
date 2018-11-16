@@ -1,0 +1,1081 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TableHeaderAddButtonComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                <code><a href="../interfaces/View.html" target="_self" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>table-header-add-button</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>table-header-add-button.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./table-header-add-button.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#collections$">collections$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#linkTypes$">linkTypes$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#bindCollections">bindCollections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#bindLinkTypes">bindLinkTypes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnChanges">ngOnChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onUseCollection">onUseCollection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onUseLinkType">onUseLinkType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setAddButtonColumnWidth">setAddButtonColumnWidth</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cursor">cursor</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialogService: <a href="../injectables/DialogService.html">DialogService</a>, element: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>, store$: Store<literal type>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>element</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>store$</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store&lt;literal type&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="cursor"></a>
+                        <code>cursor</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="../interfaces/TableBodyCursor.html" target="_self" >TableBodyCursor</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:55</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bindCollections"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            bindCollections
+                            </b>
+                            <a href="#bindCollections"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>bindCollections(cursor: <a href="../interfaces/TableBodyCursor.html">TableBodyCursor</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cursor</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/TableBodyCursor.html" target="_self" >TableBodyCursor</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bindLinkTypes"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            bindLinkTypes
+                            </b>
+                            <a href="#bindLinkTypes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>bindLinkTypes(cursor: <a href="../interfaces/TableBodyCursor.html">TableBodyCursor</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cursor</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/TableBodyCursor.html" target="_self" >TableBodyCursor</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngAfterViewInit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngAfterViewInit
+                            </b>
+                            <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngAfterViewInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:100</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnChanges"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnChanges
+                            </b>
+                            <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>changes</td>
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onUseCollection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onUseCollection
+                            </b>
+                            <a href="#onUseCollection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onUseCollection(collection: <a href="../interfaces/CollectionModel.html">CollectionModel</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:109</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>collection</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CollectionModel.html" target="_self" >CollectionModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onUseLinkType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onUseLinkType
+                            </b>
+                            <a href="#onUseLinkType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onUseLinkType(linkType: <a href="../interfaces/LinkTypeModel.html">LinkTypeModel</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:121</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>linkType</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/LinkTypeModel.html" target="_self" >LinkTypeModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="setAddButtonColumnWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            setAddButtonColumnWidth
+                            </b>
+                            <a href="#setAddButtonColumnWidth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>setAddButtonColumnWidth()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:103</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="collections$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            collections$
+                            </b>
+                            <a href="#collections$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>collections$:     <code><a href="../interfaces/CollectionModel.html" target="_self" >Observable&lt;CollectionModel[]&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/CollectionModel.html" target="_self" >Observable&lt;CollectionModel[]&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="linkTypes$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            linkTypes$
+                            </b>
+                            <a href="#linkTypes$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>linkTypes$:     <code>Observable&lt;[]&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;[]&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/view/perspectives/table/header/add-button/table-header-add-button.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from &#x27;@angular/core&#x27;;
+import {select, Store} from &#x27;@ngrx/store&#x27;;
+import {combineLatest, Observable} from &#x27;rxjs&#x27;;
+import {first, map} from &#x27;rxjs/operators&#x27;;
+import {selectCollectionsDictionary} from &#x27;../../../../../core/store/collections/collections.state&#x27;;
+import {
+  selectCollectionsByReadPermission,
+  selectLinkTypesByReadPermission,
+} from &#x27;../../../../../core/store/common/permissions.selectors&#x27;;
+import {NavigationAction} from &#x27;../../../../../core/store/navigation/navigation.action&#x27;;
+import {selectQuery} from &#x27;../../../../../core/store/navigation/navigation.state&#x27;;
+import {TableBodyCursor} from &#x27;../../../../../core/store/tables/table-cursor&#x27;;
+import {getTableElement} from &#x27;../../../../../core/store/tables/table.utils&#x27;;
+import {selectTableLastCollectionId} from &#x27;../../../../../core/store/tables/tables.selector&#x27;;
+import {DialogService} from &#x27;../../../../../dialog/dialog.service&#x27;;
+import {CollectionModel} from &#x27;./../../../../../core/store/collections/collection.model&#x27;;
+import {LinkTypeModel} from &#x27;./../../../../../core/store/link-types/link-type.model&#x27;;
+
+const ITEMS_LIMIT &#x3D; 15;
+
+@Component({
+  selector: &#x27;table-header-add-button&#x27;,
+  templateUrl: &#x27;./table-header-add-button.component.html&#x27;,
+  styleUrls: [&#x27;./table-header-add-button.component.scss&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class TableHeaderAddButtonComponent implements OnChanges, AfterViewInit {
+  @Input()
+  public cursor: TableBodyCursor;
+
+  public collections$: Observable&lt;CollectionModel[]&gt;;
+  public linkTypes$: Observable&lt;[LinkTypeModel, CollectionModel, CollectionModel][]&gt;;
+
+  constructor(private dialogService: DialogService, private element: ElementRef, private store$: Store&lt;{}&gt;) {}
+
+  public ngOnChanges(changes: SimpleChanges) {
+    if (changes.cursor &amp;&amp; this.cursor) {
+      this.bindCollections(this.cursor);
+      this.bindLinkTypes(this.cursor);
+    }
+  }
+
+  private bindCollections(cursor: TableBodyCursor) {
+    this.collections$ &#x3D; combineLatest(
+      this.store$.pipe(select(selectCollectionsByReadPermission)),
+      this.store$.pipe(select(selectTableLastCollectionId(cursor.tableId)))
+    ).pipe(
+      map(([collections, lastCollectionId]) &#x3D;&gt; {
+        return collections.filter(collection &#x3D;&gt; collection.id !&#x3D;&#x3D; lastCollectionId).slice(0, ITEMS_LIMIT);
+      })
+    );
+  }
+
+  private bindLinkTypes(cursor: TableBodyCursor) {
+    this.linkTypes$ &#x3D; combineLatest(
+      this.store$.pipe(select(selectLinkTypesByReadPermission)),
+      this.store$.pipe(select(selectCollectionsDictionary)),
+      this.store$.pipe(select(selectQuery)),
+      this.store$.pipe(select(selectTableLastCollectionId(cursor.tableId)))
+    ).pipe(
+      map(([linkTypes, collectionsMap, query, lastCollectionId]) &#x3D;&gt; {
+        const linkTypeIds &#x3D; (query &amp;&amp; query.linkTypeIds) || [];
+        return linkTypes
+          .filter(linkType &#x3D;&gt; !linkTypeIds.includes(linkType.id))
+          .filter(linkType &#x3D;&gt; linkType.collectionIds.some(id &#x3D;&gt; id &#x3D;&#x3D;&#x3D; lastCollectionId))
+          .slice(0, ITEMS_LIMIT)
+          .map&lt;[LinkTypeModel, CollectionModel, CollectionModel]&gt;(linkType &#x3D;&gt; {
+            return [linkType, collectionsMap[linkType.collectionIds[0]], collectionsMap[linkType.collectionIds[1]]];
+          });
+      })
+    );
+  }
+
+  public ngAfterViewInit() {
+    this.setAddButtonColumnWidth();
+  }
+  private setAddButtonColumnWidth() {
+    const element &#x3D; this.element.nativeElement as HTMLElement;
+    const tableElement &#x3D; getTableElement(this.cursor.tableId);
+    tableElement.style.setProperty(&#x27;--table-add-button-column-width&#x27;, &#x60;${element.clientWidth}px&#x60;);
+  }
+
+  public onUseCollection(collection: CollectionModel) {
+    this.store$
+      .pipe(
+        select(selectTableLastCollectionId(this.cursor.tableId)),
+        first()
+      )
+      .subscribe(lastCollectionId &#x3D;&gt; {
+        const linkCollectionIds &#x3D; [lastCollectionId, collection.id].join(&#x27;,&#x27;);
+        this.dialogService.openCreateLinkDialog(linkCollectionIds, linkType &#x3D;&gt; this.onUseLinkType(linkType));
+      });
+  }
+
+  public onUseLinkType(linkType: LinkTypeModel) {
+    this.store$.dispatch(new NavigationAction.AddLinkToQuery({linkTypeId: linkType.id}));
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+  &lt;button type&#x3D;&quot;button&quot;
+          class&#x3D;&quot;add-part-button&quot;
+          data-toggle&#x3D;&quot;dropdown&quot;
+          id&#x3D;&quot;tableHeaderAddButton&quot;
+          title&#x3D;&quot;Add collection&quot;
+          i18n-title&#x3D;&quot;@@table.header.add-button&quot;
+          aria-haspopup&#x3D;&quot;true&quot;
+          aria-expanded&#x3D;&quot;false&quot;&gt;
+    &lt;i class&#x3D;&quot;far fa-plus&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;div *ngIf&#x3D;&quot;{collections: collections$ | async, linkTypes: linkTypes$ | async} as data&quot;
+       class&#x3D;&quot;dropdown-menu dropdown-menu-right&quot;
+       aria-labelledby&#x3D;&quot;tableHeaderAddButton&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;data.linkTypes &amp;&amp; data.linkTypes.length &gt; 0&quot;
+         class&#x3D;&quot;dropdown-header cursor-not-allowed&quot;
+         i18n&#x3D;&quot;@@table.header.suggestion.link.existing&quot;&gt;Use existing link
+    &lt;/div&gt;
+    &lt;a *ngFor&#x3D;&quot;let linkType of data.linkTypes&quot;
+       [title]&#x3D;&quot;linkType[0]?.name&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       (click)&#x3D;&quot;onUseLinkType(linkType[0])&quot;&gt;
+      &lt;icons-presenter [colors]&#x3D;&quot;[linkType[1]?.color, linkType[2]?.color]&quot;
+                       [icons]&#x3D;&quot;[linkType[1]?.icon, linkType[2]?.icon]&quot;
+                       class&#x3D;&quot;mr-1&quot;&gt;
+      &lt;/icons-presenter&gt;
+      &lt;span&gt;{{linkType[0]?.name | truncate:20}}&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;div *ngIf&#x3D;&quot;data.collections &amp;&amp; data.collections.length &gt; 0 &amp;&amp; data.linkTypes &amp;&amp; data.linkTypes.length &gt; 0&quot;
+         class&#x3D;&quot;dropdown-divider&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div *ngIf&#x3D;&quot;data.collections &amp;&amp; data.collections.length &gt; 0&quot;
+         class&#x3D;&quot;dropdown-header cursor-not-allowed&quot;
+         i18n&#x3D;&quot;@@create.new.link&quot;&gt;Create new link
+    &lt;/div&gt;
+    &lt;a *ngFor&#x3D;&quot;let collection of data.collections&quot;
+       [title]&#x3D;&quot;collection.name&quot;
+       class&#x3D;&quot;dropdown-item&quot;
+       (click)&#x3D;&quot;onUseCollection(collection)&quot;&gt;
+      &lt;icons-presenter [colors]&#x3D;&quot;[collection.color]&quot;
+                       [icons]&#x3D;&quot;[collection.icon]&quot;
+                       class&#x3D;&quot;mx-2&quot;&gt;
+      &lt;/icons-presenter&gt;
+      &lt;span&gt;{{collection.name | truncate:20}}&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="dropdown">  <button type="button"          class="add-part-button"          data-toggle="dropdown"          id="tableHeaderAddButton"          title="Add collection"          i18n-title="@@table.header.add-button"          aria-haspopup="true"          aria-expanded="false">    <i class="far fa-plus"></i>  </button>  <div *ngIf="{collections: collections$ | async, linkTypes: linkTypes$ | async} as data"       class="dropdown-menu dropdown-menu-right"       aria-labelledby="tableHeaderAddButton">    <div *ngIf="data.linkTypes && data.linkTypes.length > 0"         class="dropdown-header cursor-not-allowed"         i18n="@@table.header.suggestion.link.existing">Use existing link    </div>    <a *ngFor="let linkType of data.linkTypes"       [title]="linkType[0]?.name"       class="dropdown-item"       (click)="onUseLinkType(linkType[0])">      <icons-presenter [colors]="[linkType[1]?.color, linkType[2]?.color]"                       [icons]="[linkType[1]?.icon, linkType[2]?.icon]"                       class="mr-1">      </icons-presenter>      <span>{{linkType[0]?.name | truncate:20}}</span>    </a>    <div *ngIf="data.collections && data.collections.length > 0 && data.linkTypes && data.linkTypes.length > 0"         class="dropdown-divider">    </div>    <div *ngIf="data.collections && data.collections.length > 0"         class="dropdown-header cursor-not-allowed"         i18n="@@create.new.link">Create new link    </div>    <a *ngFor="let collection of data.collections"       [title]="collection.name"       class="dropdown-item"       (click)="onUseCollection(collection)">      <icons-presenter [colors]="[collection.color]"                       [icons]="[collection.icon]"                       class="mx-2">      </icons-presenter>      <span>{{collection.name | truncate:20}}</span>    </a>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AgreementComponent', 'selector': 'agreement'},{'name': 'AppComponent', 'selector': 'lmr-app'},{'name': 'AttributeConditionComponent', 'selector': 'attribute-condition'},{'name': 'AttributeValueComponent', 'selector': 'attribute-value'},{'name': 'AuthCallbackComponent', 'selector': 'auth-callback'},{'name': 'ChartConfigComponent', 'selector': 'chart-config'},{'name': 'ChartPerspectiveComponent', 'selector': 'chart-perspective'},{'name': 'ChartVisualizationComponent', 'selector': 'chart-visualization'},{'name': 'CollapsibleSidebarComponent', 'selector': 'collapsible-sidebar'},{'name': 'CollapsibleSidebarToggleComponent', 'selector': 'collapsible-sidebar-toggle'},{'name': 'CollectionAttributesComponent', 'selector': ''},{'name': 'CollectionLinkTypesComponent', 'selector': ''},{'name': 'CollectionNameInputComponent', 'selector': 'collection-name-input'},{'name': 'CollectionSettingsComponent', 'selector': ''},{'name': 'CollectionUsersComponent', 'selector': ''},{'name': 'ColorPickerComponent', 'selector': 'color-picker'},{'name': 'CommentsComponent', 'selector': 'comments'},{'name': 'ConditionSuggestionsComponent', 'selector': 'condition-suggestions'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ControlsToggleComponent', 'selector': 'controls-toggle'},{'name': 'CreateCollectionDialogComponent', 'selector': 'create-collection-dialog'},{'name': 'CreateLinkDialogComponent', 'selector': 'create-link-dialog'},{'name': 'CreateResourceDialogComponent', 'selector': 'create-resource-dialog'},{'name': 'DetailPerspectiveComponent', 'selector': 'detail-perspective'},{'name': 'DialogBaseComponent', 'selector': 'dialog-base'},{'name': 'DialogWrapperComponent', 'selector': 'dialog-wrapper'},{'name': 'DocumentDetailComponent', 'selector': 'document-detail'},{'name': 'DocumentHintsComponent', 'selector': 'document-hints'},{'name': 'EmptyCollectionsComponent', 'selector': 'empty-collections'},{'name': 'EmptyDataComponent', 'selector': 'empty-data'},{'name': 'EmptyDocumentsComponent', 'selector': 'empty-documents'},{'name': 'EmptyMapComponent', 'selector': 'empty-map'},{'name': 'EmptyPostItsComponent', 'selector': 'empty-post-its'},{'name': 'EmptyRecordsComponent', 'selector': 'empty-records'},{'name': 'EmptySearchComponent', 'selector': 'empty-search'},{'name': 'EmptyStateComponent', 'selector': 'empty-state'},{'name': 'EmptyViewsComponent', 'selector': 'empty-views'},{'name': 'FeedbackDialogComponent', 'selector': 'feedback-dialog'},{'name': 'FilterBoxComponent', 'selector': 'filter-box'},{'name': 'GroupsSuggestionsComponent', 'selector': 'group-suggestions'},{'name': 'HomeComponent', 'selector': ''},{'name': 'IconComponent', 'selector': 'icon-chooser'},{'name': 'IconPickerComponent', 'selector': 'icon-picker'},{'name': 'IconsPresenterComponent', 'selector': 'icons-presenter'},{'name': 'InputBoxComponent', 'selector': 'input-box'},{'name': 'InvalidQueryComponent', 'selector': 'invalid-query'},{'name': 'KeyValueComponent', 'selector': 'key-value'},{'name': 'LinkNameInputComponent', 'selector': 'link-name-input'},{'name': 'LinkTypeComponent', 'selector': '[link-type]'},{'name': 'LinksComponent', 'selector': 'links'},{'name': 'LinksListComponent', 'selector': 'links-list'},{'name': 'LinksListTableBodyComponent', 'selector': '[links-list-table-body]'},{'name': 'LinksListTableComponent', 'selector': 'links-list-table'},{'name': 'LinksListTableHeaderComponent', 'selector': '[links-list-table-header]'},{'name': 'LinksListTabsComponent', 'selector': 'links-list-tabs'},{'name': 'LogoutComponent', 'selector': 'logout'},{'name': 'LumeerLogoComponent', 'selector': 'lumeer-logo'},{'name': 'MapAttributeGroupComponent', 'selector': 'map-attribute-group'},{'name': 'MapAttributeSelectComponent', 'selector': 'map-attribute-select'},{'name': 'MapContentComponent', 'selector': 'map-content'},{'name': 'MapPanelComponent', 'selector': 'map-panel'},{'name': 'MapPerspectiveComponent', 'selector': 'map-perspective'},{'name': 'MapRenderComponent', 'selector': 'map-render'},{'name': 'NewUserComponent', 'selector': 'new-user'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OrganizationDetailComponent', 'selector': ''},{'name': 'OrganizationGroupsComponent', 'selector': ''},{'name': 'OrganizationRegistrationComponent', 'selector': ''},{'name': 'OrganizationSettingsComponent', 'selector': ''},{'name': 'OrganizationUsersComponent', 'selector': ''},{'name': 'OverwriteViewDialogComponent', 'selector': 'overwrite-view-dialog'},{'name': 'PaymentsListComponent', 'selector': 'payments-list'},{'name': 'PaymentsOrderComponent', 'selector': 'payments-order'},{'name': 'PaymentsPanelComponent', 'selector': 'payments-panel'},{'name': 'PaymentsStateComponent', 'selector': 'payments-state'},{'name': 'PostItAddDocumentComponent', 'selector': 'add-document'},{'name': 'PostItCollectionAddButtonComponent', 'selector': 'post-it-collection-add-button'},{'name': 'PostItCollectionComponent', 'selector': 'post-it-collection'},{'name': 'PostItCollectionImportButtonComponent', 'selector': 'post-it-collection-import-button'},{'name': 'PostItCollectionNameComponent', 'selector': 'post-it-collection-name'},{'name': 'PostItCollectionsComponent', 'selector': 'post-it-collections'},{'name': 'PostItDocumentCellComponent', 'selector': 'post-it-document-cell'},{'name': 'PostItDocumentComponent', 'selector': 'post-it-document'},{'name': 'PostItDocumentHeaderComponent', 'selector': 'post-it-document-header'},{'name': 'PostItPerspectiveComponent', 'selector': 'post-it-perspective'},{'name': 'PreviewResultsComponent', 'selector': 'preview-results'},{'name': 'PreviewResultsTableComponent', 'selector': 'preview-results-table'},{'name': 'PreviewResultsTabsComponent', 'selector': 'preview-results-tabs'},{'name': 'ProjectSettingsComponent', 'selector': ''},{'name': 'ProjectUsersComponent', 'selector': ''},{'name': 'QueryItemComponent', 'selector': 'query-item'},{'name': 'ResourceChooserComponent', 'selector': 'resource-chooser'},{'name': 'ResourceCodeInputComponent', 'selector': 'resource-code-input'},{'name': 'ResourceDetailComponent', 'selector': 'resource-detail'},{'name': 'ResourceHeaderComponent', 'selector': 'resource-header'},{'name': 'ResourceListComponent', 'selector': 'resource-list'},{'name': 'ResourceMenuComponent', 'selector': 'resource-menu'},{'name': 'ResourceNameInputComponent', 'selector': 'resource-name-input'},{'name': 'ResourcePostItComponent', 'selector': 'resource-post-it'},{'name': 'ResourceStatusLineComponent', 'selector': 'resource-status-line'},{'name': 'SearchAllComponent', 'selector': ''},{'name': 'SearchBoxComponent', 'selector': 'search-box'},{'name': 'SearchButtonComponent', 'selector': 'search-button'},{'name': 'SearchCollectionsComponent', 'selector': ''},{'name': 'SearchDocumentHeaderComponent', 'selector': 'search-document-header'},{'name': 'SearchDocumentsComponent', 'selector': 'search-documents'},{'name': 'SearchInputComponent', 'selector': 'search-input'},{'name': 'SearchLinksComponent', 'selector': ''},{'name': 'SearchPerspectiveComponent', 'selector': ''},{'name': 'SearchSuggestionsComponent', 'selector': 'search-suggestions'},{'name': 'SearchViewsComponent', 'selector': 'search-views'},{'name': 'SelectItemComponent', 'selector': 'select-item'},{'name': 'SessionExpiredComponent', 'selector': 'session-expired'},{'name': 'ShareUserComponent', 'selector': '[share-user]'},{'name': 'ShareViewCopyComponent', 'selector': 'share-view-copy'},{'name': 'ShareViewDialogComponent', 'selector': 'share-view-dialog'},{'name': 'ShareViewInputComponent', 'selector': 'share-view-input'},{'name': 'SizeSliderComponent', 'selector': 'size-slider'},{'name': 'SliderComponent', 'selector': 'slider'},{'name': 'SuggestionItemComponent', 'selector': 'search-suggestion-item'},{'name': 'TableAttributeSuggestionsComponent', 'selector': 'table-attribute-suggestions'},{'name': 'TableBodyComponent', 'selector': 'table-body'},{'name': 'TableCaptionComponent', 'selector': 'table-caption'},{'name': 'TableCellGroupComponent', 'selector': 'table-cell-group'},{'name': 'TableCollapsedCellComponent', 'selector': 'table-collapsed-cell'},{'name': 'TableCollapsedCellMenuComponent', 'selector': 'table-collapsed-cell-menu'},{'name': 'TableColumnContextMenuComponent', 'selector': 'table-column-context-menu'},{'name': 'TableColumnGroupComponent', 'selector': 'table-column-group'},{'name': 'TableDataCellComponent', 'selector': 'table-data-cell'},{'name': 'TableDataCellMenuComponent', 'selector': 'table-data-cell-menu'},{'name': 'TableHeaderAddButtonComponent', 'selector': 'table-header-add-button'},{'name': 'TableHeaderCollectionComponent', 'selector': 'table-header-collection'},{'name': 'TableHeaderComponent', 'selector': 'table-header'},{'name': 'TableHeaderLinkComponent', 'selector': 'table-header-link'},{'name': 'TableHiddenColumnComponent', 'selector': 'table-hidden-column'},{'name': 'TableHierarchyCellComponent', 'selector': 'table-hierarchy-cell'},{'name': 'TableHierarchyCellMenuComponent', 'selector': 'table-hierarchy-cell-menu'},{'name': 'TableHierarchyColumnComponent', 'selector': 'table-hierarchy-column'},{'name': 'TableLinkCellComponent', 'selector': 'table-link-cell'},{'name': 'TableLinkInfoComponent', 'selector': 'table-link-info'},{'name': 'TableLinkedRowComponent', 'selector': 'table-linked-row'},{'name': 'TableLinkedRowsComponent', 'selector': 'table-linked-rows'},{'name': 'TablePerspectiveComponent', 'selector': 'table-perspective'},{'name': 'TablePrimaryRowComponent', 'selector': 'table-primary-row'},{'name': 'TableRowGroupComponent', 'selector': 'table-row-group'},{'name': 'TableRowGroupFooterComponent', 'selector': 'table-row-group-footer'},{'name': 'TableRowGroupHeaderComponent', 'selector': 'table-row-group-header'},{'name': 'TableRowNumbersComponent', 'selector': 'table-row-numbers'},{'name': 'TableRowsComponent', 'selector': 'table-rows'},{'name': 'TableSingleColumnComponent', 'selector': 'table-single-column'},{'name': 'TagComponent', 'selector': 'tag'},{'name': 'TopPanelComponent', 'selector': 'top-panel'},{'name': 'TopPanelWrapperComponent', 'selector': 'top-panel-wrapper'},{'name': 'UserComponent', 'selector': '[user]'},{'name': 'UserGroupsComponent', 'selector': 'user-groups'},{'name': 'UserListComponent', 'selector': 'user-list'},{'name': 'UserMenuComponent', 'selector': 'user-menu'},{'name': 'UserPanelComponent', 'selector': 'user-panel'},{'name': 'UsersComponent', 'selector': 'users'},{'name': 'ViewComponent', 'selector': ''},{'name': 'ViewControlsComponent', 'selector': 'view-controls'},{'name': 'ViewDetailComponent', 'selector': 'view-detail'},{'name': 'ViewLoadingComponent', 'selector': 'view-loading'},{'name': 'WorkspaceChooserComponent', 'selector': 'workspace-chooser'},{'name': 'WorkspacePanelComponent', 'selector': 'workspace-panel'}];
+    var DIRECTIVES = [{'name': 'DraggableDirective', 'selector': '[lmrDraggable]'},{'name': 'DropTargetDirective', 'selector': '[lmrDropTarget]'},{'name': 'LayoutItemDirective', 'selector': '[layout-item]'},{'name': 'NgVarDirective', 'selector': '[ngVar]'},{'name': 'PerspectiveDirective', 'selector': '[perspective]'},{'name': 'RemovePlaceholderOnFocusDirective', 'selector': '[remove-placeholder-on-focus]'},{'name': 'SearchResultsDirective', 'selector': '[search-results]'},{'name': 'TableEditableCellDirective', 'selector': '[tableEditableCell]'},{'name': 'TrimValueAccessor', 'selector': 'input[trim], textarea[trim], div[trim]'}];
+    var ACTUAL_COMPONENT = {'name': 'TableHeaderAddButtonComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TableHeaderAddButtonComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

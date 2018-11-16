@@ -1,0 +1,601 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>Clear</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/store/collections/collections.action.ts</code>
+        </p>
+
+
+
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                        <code>Action</code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#type">type</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="type"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Readonly</span>
+                            type
+                            </b>
+                            <a href="#type"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>type:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>CollectionsActionType.CLEAR</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="356" class="link-to-prism">src/app/core/store/collections/collections.action.ts:356</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Action} from &#x27;@ngrx/store&#x27;;
+import {ImportedCollection} from &#x27;../../dto/imported-collection&#x27;;
+import {QueryModel} from &#x27;../navigation/query.model&#x27;;
+import {Workspace} from &#x27;../navigation/workspace.model&#x27;;
+import {PermissionModel, PermissionType} from &#x27;../permissions/permissions.model&#x27;;
+import {AttributeModel, CollectionModel} from &#x27;./collection.model&#x27;;
+
+export enum CollectionsActionType {
+  GET &#x3D; &#x27;[Collections] Get&#x27;,
+  GET_SUCCESS &#x3D; &#x27;[Collections] Get :: Success&#x27;,
+  GET_FAILURE &#x3D; &#x27;[Collections] Get :: Failure&#x27;,
+
+  GET_NAMES &#x3D; &#x27;[Collections] Get Collection Names&#x27;,
+  GET_NAMES_SUCCESS &#x3D; &#x27;[Collections] Get Collection Names :: Success&#x27;,
+  GET_NAMES_FAILURE &#x3D; &#x27;[Collections] Get Collection Names :: Failure&#x27;,
+
+  ADD_NAME &#x3D; &#x27;[Collections] Add Collection Name&#x27;,
+  DELETE_NAME &#x3D; &#x27;[Collections] Delete Collection Name&#x27;,
+
+  CREATE &#x3D; &#x27;[Collections] Create&#x27;,
+  CREATE_SUCCESS &#x3D; &#x27;[Collections] Create :: Success&#x27;,
+  CREATE_FAILURE &#x3D; &#x27;[Collections] Create :: Failure&#x27;,
+
+  IMPORT &#x3D; &#x27;[Collections] Import&#x27;,
+  IMPORT_SUCCESS &#x3D; &#x27;[Collections] Import :: Success&#x27;,
+  IMPORT_FAILURE &#x3D; &#x27;[Collections] Import :: Failure&#x27;,
+
+  UPDATE &#x3D; &#x27;[Collections] Update&#x27;,
+  UPDATE_SUCCESS &#x3D; &#x27;[Collections] Update :: Success&#x27;,
+  UPDATE_FAILURE &#x3D; &#x27;[Collections] Update :: Failure&#x27;,
+
+  DELETE &#x3D; &#x27;[Collections] Delete&#x27;,
+  DELETE_SUCCESS &#x3D; &#x27;[Collections] Delete :: Success&#x27;,
+  DELETE_FAILURE &#x3D; &#x27;[Collections] Delete :: Failure&#x27;,
+
+  ADD_FAVORITE &#x3D; &#x27;[Collections] Add Favorite&#x27;,
+  ADD_FAVORITE_SUCCESS &#x3D; &#x27;[Collections] Add Favorite :: Success&#x27;,
+  ADD_FAVORITE_FAILURE &#x3D; &#x27;[Collections] Add Favorite :: Failure&#x27;,
+
+  REMOVE_FAVORITE &#x3D; &#x27;[Collections] Remove Favorite&#x27;,
+  REMOVE_FAVORITE_SUCCESS &#x3D; &#x27;[Collections] Remove Favorite :: Success&#x27;,
+  REMOVE_FAVORITE_FAILURE &#x3D; &#x27;[Collections] Remove Favorite :: Failure&#x27;,
+
+  SET_DEFAULT_ATTRIBUTE &#x3D; &#x27;[Collections] Set Default Attribute&#x27;,
+  SET_DEFAULT_ATTRIBUTE_SUCCESS &#x3D; &#x27;[Collections] Set Default Attribute :: Success&#x27;,
+  SET_DEFAULT_ATTRIBUTE_FAILURE &#x3D; &#x27;[Collections] Set Default Attribute :: Failure&#x27;,
+
+  CHANGE_ATTRIBUTE &#x3D; &#x27;[Collections] Change Attribute&#x27;,
+  CHANGE_ATTRIBUTE_SUCCESS &#x3D; &#x27;[Collections] Change Attribute :: Success&#x27;,
+  CHANGE_ATTRIBUTE_FAILURE &#x3D; &#x27;[Collections] Change Attribute :: Failure&#x27;,
+
+  CREATE_ATTRIBUTES &#x3D; &#x27;[Collections] Create Attributes&#x27;,
+  CREATE_ATTRIBUTES_SUCCESS &#x3D; &#x27;[Collections] Create Attributes :: Success&#x27;,
+  CREATE_ATTRIBUTES_FAILURE &#x3D; &#x27;[Collections] Create Attributes :: Failure&#x27;,
+
+  REMOVE_ATTRIBUTE &#x3D; &#x27;[Collections] Remove Attribute&#x27;,
+  REMOVE_ATTRIBUTE_SUCCESS &#x3D; &#x27;[Collections] Remove Attribute :: Success&#x27;,
+  REMOVE_ATTRIBUTE_FAILURE &#x3D; &#x27;[Collections] Remove Attribute :: Failure&#x27;,
+
+  CHANGE_PERMISSION &#x3D; &#x27;[Collections] Change Permission&#x27;,
+  CHANGE_PERMISSION_SUCCESS &#x3D; &#x27;[Collections] Change Permission :: Success&#x27;,
+  CHANGE_PERMISSION_FAILURE &#x3D; &#x27;[Collections] Change Permission :: Failure&#x27;,
+
+  CLEAR &#x3D; &#x27;[Collections] Clear&#x27;,
+}
+
+export namespace CollectionsAction {
+  export class Get implements Action {
+    public readonly type &#x3D; CollectionsActionType.GET;
+  }
+
+  export class GetSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.GET_SUCCESS;
+
+    public constructor(public payload: {collections: CollectionModel[]}) {}
+  }
+
+  export class GetFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.GET_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class GetNames implements Action {
+    public readonly type &#x3D; CollectionsActionType.GET_NAMES;
+  }
+
+  export class GetNamesSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.GET_NAMES_SUCCESS;
+
+    public constructor(public payload: {collectionNames: string[]}) {}
+  }
+
+  export class GetNamesFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.GET_NAMES_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class AddName implements Action {
+    public readonly type &#x3D; CollectionsActionType.ADD_NAME;
+
+    public constructor(public payload: {name: string}) {}
+  }
+
+  export class DeleteName implements Action {
+    public readonly type &#x3D; CollectionsActionType.DELETE_NAME;
+
+    public constructor(public payload: {name: string}) {}
+  }
+
+  export class Create implements Action {
+    public readonly type &#x3D; CollectionsActionType.CREATE;
+
+    public constructor(
+      public payload: {collection: CollectionModel; callback?: (collection: CollectionModel) &#x3D;&gt; void}
+    ) {}
+  }
+
+  export class CreateSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.CREATE_SUCCESS;
+
+    public constructor(public payload: {collection: CollectionModel}) {}
+  }
+
+  export class CreateFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.CREATE_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class Import implements Action {
+    public readonly type &#x3D; CollectionsActionType.IMPORT;
+
+    public constructor(
+      public payload: {
+        format: string;
+        importedCollection: ImportedCollection;
+        callback?: (collection: CollectionModel) &#x3D;&gt; void;
+      }
+    ) {}
+  }
+
+  export class ImportSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.IMPORT_SUCCESS;
+
+    public constructor(public payload: {collection: CollectionModel}) {}
+  }
+
+  export class ImportFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.IMPORT_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class Update implements Action {
+    public readonly type &#x3D; CollectionsActionType.UPDATE;
+
+    public constructor(public payload: {collection: CollectionModel; callback?: () &#x3D;&gt; void}) {}
+  }
+
+  export class UpdateSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.UPDATE_SUCCESS;
+
+    public constructor(public payload: {collection: CollectionModel}) {}
+  }
+
+  export class UpdateFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.UPDATE_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class Delete implements Action {
+    public readonly type &#x3D; CollectionsActionType.DELETE;
+
+    public constructor(public payload: {collectionId: string; callback?: (collectionId: string) &#x3D;&gt; void}) {}
+  }
+
+  export class DeleteSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.DELETE_SUCCESS;
+
+    public constructor(public payload: {collectionId: string}) {}
+  }
+
+  export class DeleteFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.DELETE_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class AddFavorite implements Action {
+    public readonly type &#x3D; CollectionsActionType.ADD_FAVORITE;
+
+    public constructor(public payload: {collectionId: string}) {}
+  }
+
+  export class AddFavoriteSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.ADD_FAVORITE_SUCCESS;
+
+    public constructor(public payload: {collectionId: string}) {}
+  }
+
+  export class AddFavoriteFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.ADD_FAVORITE_FAILURE;
+
+    public constructor(public payload: {collectionId: string; error: any}) {}
+  }
+
+  export class RemoveFavorite implements Action {
+    public readonly type &#x3D; CollectionsActionType.REMOVE_FAVORITE;
+
+    public constructor(public payload: {collectionId: string}) {}
+  }
+
+  export class RemoveFavoriteSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.REMOVE_FAVORITE_SUCCESS;
+
+    public constructor(public payload: {collectionId: string}) {}
+  }
+
+  export class RemoveFavoriteFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.REMOVE_FAVORITE_FAILURE;
+
+    public constructor(public payload: {collectionId: string; error: any}) {}
+  }
+
+  export class SetDefaultAttribute implements Action {
+    public readonly type &#x3D; CollectionsActionType.SET_DEFAULT_ATTRIBUTE;
+
+    public constructor(public payload: {collectionId: string; attributeId: string}) {}
+  }
+
+  export class SetDefaultAttributeSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.SET_DEFAULT_ATTRIBUTE_SUCCESS;
+
+    public constructor(public payload: {collectionId: string; attributeId: string}) {}
+  }
+
+  export class SetDefaultAttributeFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.SET_DEFAULT_ATTRIBUTE_FAILURE;
+
+    public constructor(public payload: {collectionId: string; oldDefaultAttributeId: string; error: any}) {}
+  }
+
+  export class CreateAttributes implements Action {
+    public readonly type &#x3D; CollectionsActionType.CREATE_ATTRIBUTES;
+
+    public constructor(
+      public payload: {
+        collectionId: string;
+        attributes: AttributeModel[];
+        nextAction?: Action;
+        callback?: (attributes: AttributeModel[]) &#x3D;&gt; void;
+      }
+    ) {}
+  }
+
+  export class CreateAttributesSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.CREATE_ATTRIBUTES_SUCCESS;
+
+    public constructor(public payload: {collectionId: string; attributes: AttributeModel[]}) {}
+  }
+
+  export class CreateAttributesFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.CREATE_ATTRIBUTES_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class ChangeAttribute implements Action {
+    public readonly type &#x3D; CollectionsActionType.CHANGE_ATTRIBUTE;
+
+    public constructor(
+      public payload: {collectionId: string; attributeId: string; attribute: AttributeModel; nextAction?: Action}
+    ) {}
+  }
+
+  export class ChangeAttributeSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.CHANGE_ATTRIBUTE_SUCCESS;
+
+    public constructor(public payload: {collectionId: string; attributeId: string; attribute: AttributeModel}) {}
+  }
+
+  export class ChangeAttributeFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.CHANGE_ATTRIBUTE_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class RemoveAttribute implements Action {
+    public readonly type &#x3D; CollectionsActionType.REMOVE_ATTRIBUTE;
+
+    public constructor(public payload: {collectionId: string; attributeId: string}) {}
+  }
+
+  export class RemoveAttributeSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.REMOVE_ATTRIBUTE_SUCCESS;
+
+    public constructor(public payload: {collectionId: string; attributeId: string}) {}
+  }
+
+  export class RemoveAttributeFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.REMOVE_ATTRIBUTE_FAILURE;
+
+    public constructor(public payload: {error: any}) {}
+  }
+
+  export class ChangePermission implements Action {
+    public readonly type &#x3D; CollectionsActionType.CHANGE_PERMISSION;
+
+    public constructor(
+      public payload: {
+        collectionId: string;
+        type: PermissionType;
+        permission: PermissionModel;
+        currentPermission: PermissionModel;
+      }
+    ) {}
+  }
+
+  export class ChangePermissionSuccess implements Action {
+    public readonly type &#x3D; CollectionsActionType.CHANGE_PERMISSION_SUCCESS;
+
+    public constructor(public payload: {collectionId: string; type: PermissionType; permission: PermissionModel}) {}
+  }
+
+  export class ChangePermissionFailure implements Action {
+    public readonly type &#x3D; CollectionsActionType.CHANGE_PERMISSION_FAILURE;
+
+    public constructor(
+      public payload: {collectionId: string; type: PermissionType; permission: PermissionModel; error: any}
+    ) {}
+  }
+
+  export class Clear implements Action {
+    public readonly type &#x3D; CollectionsActionType.CLEAR;
+  }
+
+  export type All &#x3D;
+    | Get
+    | GetSuccess
+    | GetFailure
+    | GetNames
+    | GetNamesSuccess
+    | GetNamesFailure
+    | AddName
+    | DeleteName
+    | Create
+    | CreateSuccess
+    | CreateFailure
+    | Import
+    | ImportSuccess
+    | ImportFailure
+    | Update
+    | UpdateSuccess
+    | UpdateFailure
+    | Delete
+    | DeleteSuccess
+    | DeleteFailure
+    | AddFavorite
+    | AddFavoriteSuccess
+    | AddFavoriteFailure
+    | RemoveFavorite
+    | RemoveFavoriteSuccess
+    | RemoveFavoriteFailure
+    | SetDefaultAttribute
+    | SetDefaultAttributeSuccess
+    | SetDefaultAttributeFailure
+    | CreateAttributes
+    | CreateAttributesSuccess
+    | CreateAttributesFailure
+    | ChangeAttribute
+    | ChangeAttributeSuccess
+    | ChangeAttributeFailure
+    | RemoveAttribute
+    | RemoveAttributeSuccess
+    | RemoveAttributeFailure
+    | ChangePermission
+    | ChangePermissionSuccess
+    | ChangePermissionFailure
+    | Clear;
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Clear-1.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

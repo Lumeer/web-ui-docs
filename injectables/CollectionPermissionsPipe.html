@@ -1,0 +1,592 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>CollectionPermissionsPipe</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/pipes/permissions/collection-permissions.pipe.ts</code>
+        </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getViewCollectionIds">getViewCollectionIds</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#transform">transform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userPermissionsInView">userPermissionsInView</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#viewContainsCollection">viewContainsCollection</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>Object()</code>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getViewCollectionIds"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            getViewCollectionIds
+                            </b>
+                            <a href="#getViewCollectionIds"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>getViewCollectionIds(view: <a href="../interfaces/ViewModel.html">ViewModel</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/app/shared/pipes/permissions/collection-permissions.pipe.ts:103</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>view</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/ViewModel.html" target="_self" >ViewModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;string[]&gt;</code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="transform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            transform
+                            </b>
+                            <a href="#transform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>transform(collection: <a href="../interfaces/CollectionModel.html">CollectionModel</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/shared/pipes/permissions/collection-permissions.pipe.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>collection</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CollectionModel.html" target="_self" >CollectionModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Permissions.html" target="_self" >Observable&lt;AllowedPermissions&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userPermissionsInView"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            userPermissionsInView
+                            </b>
+                            <a href="#userPermissionsInView"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>userPermissionsInView(user: <a href="../interfaces/UserModel.html">UserModel</a>, collection: <a href="../interfaces/CollectionModel.html">CollectionModel</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/shared/pipes/permissions/collection-permissions.pipe.ts:72</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>user</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/UserModel.html" target="_self" >UserModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>collection</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CollectionModel.html" target="_self" >CollectionModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Permissions.html" target="_self" >Observable&lt;AllowedPermissions&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="viewContainsCollection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            viewContainsCollection
+                            </b>
+                            <a href="#viewContainsCollection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>viewContainsCollection(view: <a href="../interfaces/ViewModel.html">ViewModel</a>, collection: <a href="../interfaces/CollectionModel.html">CollectionModel</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/shared/pipes/permissions/collection-permissions.pipe.ts:99</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>view</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/ViewModel.html" target="_self" >ViewModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>collection</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/CollectionModel.html" target="_self" >CollectionModel</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable, Pipe, PipeTransform} from &#x27;@angular/core&#x27;;
+import {Store} from &#x27;@ngrx/store&#x27;;
+import {Observable, of, combineLatest as observableCombineLatest} from &#x27;rxjs&#x27;;
+import {map, mergeMap} from &#x27;rxjs/operators&#x27;;
+import {AppState} from &#x27;../../../core/store/app.state&#x27;;
+import {selectCurrentUserForWorkspace} from &#x27;../../../core/store/users/users.state&#x27;;
+import {authorRolesInView, userRolesInResource} from &#x27;../../utils/resource.utils&#x27;;
+import {UserModel} from &#x27;../../../core/store/users/user.model&#x27;;
+import {selectCurrentView} from &#x27;../../../core/store/views/views.state&#x27;;
+import {ViewModel} from &#x27;../../../core/store/views/view.model&#x27;;
+import {selectAllLinkTypes} from &#x27;../../../core/store/link-types/link-types.state&#x27;;
+import {CollectionModel} from &#x27;../../../core/store/collections/collection.model&#x27;;
+import {selectAllDocuments} from &#x27;../../../core/store/documents/documents.state&#x27;;
+import {getCollectionsIdsFromView} from &#x27;../../../core/store/collections/collection.util&#x27;;
+import {AllowedPermissions} from &#x27;../../../core/model/allowed-permissions&#x27;;
+import {Role} from &#x27;../../../core/model/role&#x27;;
+
+@Pipe({
+  name: &#x27;collectionPermissions&#x27;,
+  pure: false,
+})
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class CollectionPermissionsPipe implements PipeTransform {
+  public constructor(private store: Store&lt;AppState&gt;) {}
+
+  public transform(collection: CollectionModel): Observable&lt;AllowedPermissions&gt; {
+    return this.store.select(selectCurrentUserForWorkspace).pipe(
+      mergeMap(currentUser &#x3D;&gt; {
+        if (!currentUser || !collection) {
+          return of({});
+        }
+
+        const userRoles &#x3D; userRolesInResource(currentUser, collection);
+        const read &#x3D; userRoles.includes(Role.Read);
+        const write &#x3D; userRoles.includes(Role.Write);
+        const manage &#x3D; userRoles.includes(Role.Manage);
+
+        return this.userPermissionsInView(currentUser, collection).pipe(
+          map(viewAllowedPermissions &#x3D;&gt; {
+            const readWithView &#x3D; viewAllowedPermissions.readWithView || read;
+            const writeWithView &#x3D; viewAllowedPermissions.writeWithView || write;
+            const manageWithView &#x3D; viewAllowedPermissions.manageWithView || manage;
+
+            return {read, write, manage, readWithView, writeWithView, manageWithView};
+          })
+        );
+      })
+    );
+  }
+
+  private userPermissionsInView(user: UserModel, collection: CollectionModel): Observable&lt;AllowedPermissions&gt; {
+    return this.store.select(selectCurrentView).pipe(
+      mergeMap(view &#x3D;&gt; {
+        if (!view) {
+          return of({});
+        }
+
+        return this.viewContainsCollection(view, collection).pipe(
+          map(contains &#x3D;&gt; {
+            if (!contains) {
+              return {};
+            }
+
+            const userRoles &#x3D; userRolesInResource(user, view);
+            const authorRoles &#x3D; authorRolesInView(view, collection.id);
+
+            const readWithView &#x3D; userRoles.includes(Role.Read) &amp;&amp; authorRoles.includes(Role.Read);
+            const writeWithView &#x3D; userRoles.includes(Role.Write) &amp;&amp; authorRoles.includes(Role.Write);
+            const manageWithView &#x3D; userRoles.includes(Role.Manage) &amp;&amp; authorRoles.includes(Role.Manage);
+
+            return {readWithView, writeWithView, manageWithView};
+          })
+        );
+      })
+    );
+  }
+
+  private viewContainsCollection(view: ViewModel, collection: CollectionModel): Observable&lt;boolean&gt; {
+    return this.getViewCollectionIds(view).pipe(map(collectionIds &#x3D;&gt; collectionIds.includes(collection.id)));
+  }
+
+  private getViewCollectionIds(view: ViewModel): Observable&lt;string[]&gt; {
+    return observableCombineLatest(this.store.select(selectAllLinkTypes), this.store.select(selectAllDocuments)).pipe(
+      map(([linkTypes, documents]) &#x3D;&gt; getCollectionsIdsFromView(view, linkTypes, documents))
+    );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CollectionPermissionsPipe.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

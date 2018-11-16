@@ -1,0 +1,1598 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CreateResourceDialogComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/dialog/create-resource/create-resource-dialog.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>create-resource-dialog</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-resource-dialog.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#color">color</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#colors">colors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#form">form</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#icon">icon</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#icons">icons</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isFirstProject">isFirstProject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#parentId">parentId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#parentOrganization">parentOrganization</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceType">resourceType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#subscriptions">subscriptions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canShowContent">canShowContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createAsyncValidator">createAsyncValidator</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createForm">createForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createResourceAction">createResourceAction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createResourceObject">createResourceObject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getResourceTypeFromRouter">getResourceTypeFromRouter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#parseResourceType">parseResourceType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#reset">reset</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#selectData">selectData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#codeInput">codeInput</a>
+                                </li>
+                                <li>
+                                    <a href="#nameInput">nameInput</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialogService: <a href="../injectables/DialogService.html">DialogService</a>, projectValidators: <a href="../injectables/ProjectValidators.html">ProjectValidators</a>, organizationValidators: <a href="../injectables/OrganizationValidators.html">OrganizationValidators</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, store: <a href="../interfaces/AppState.html">Store<AppState></a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectValidators</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/ProjectValidators.html" target="_self" >ProjectValidators</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>organizationValidators</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/OrganizationValidators.html" target="_self" >OrganizationValidators</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../interfaces/AppState.html" target="_self" >Store&lt;AppState&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canShowContent"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            canShowContent
+                            </b>
+                            <a href="#canShowContent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>canShowContent()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:118</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createAsyncValidator"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            createAsyncValidator
+                            </b>
+                            <a href="#createAsyncValidator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>createAsyncValidator()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:122</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Validator.html" target="_self" >AsyncValidatorFn</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createForm"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            createForm
+                            </b>
+                            <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>createForm()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:92</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createResourceAction"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            createResourceAction
+                            </b>
+                            <a href="#createResourceAction"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>createResourceAction()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="132" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:132</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Action</code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createResourceObject"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            createResourceObject
+                            </b>
+                            <a href="#createResourceObject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>createResourceObject()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:145</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/ResourceModel.html" target="_self" >ResourceModel</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getResourceTypeFromRouter"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            getResourceTypeFromRouter
+                            </b>
+                            <a href="#getResourceTypeFromRouter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>getResourceTypeFromRouter()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="187" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:187</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Resource.html" target="_self" >ResourceType</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnDestroy"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnDestroy
+                            </b>
+                            <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnDestroy()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSubmit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onSubmit
+                            </b>
+                            <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onSubmit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:105</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="parseResourceType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            parseResourceType
+                            </b>
+                            <a href="#parseResourceType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>parseResourceType()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:155</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reset"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            reset
+                            </b>
+                            <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>reset()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:99</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectData"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            selectData
+                            </b>
+                            <a href="#selectData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>selectData()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="174" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:174</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="color"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            color
+                            </b>
+                            <a href="#color"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>color:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DEFAULT_COLOR</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="colors"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            colors
+                            </b>
+                            <a href="#colors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>colors:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>Colors.palette</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="form"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            form
+                            </b>
+                            <a href="#form"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>form:     <code><a href="../interfaces/Group.html" target="_self" >FormGroup</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/Group.html" target="_self" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="icon"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            icon
+                            </b>
+                            <a href="#icon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>icon:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DEFAULT_ICON</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="icons"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            icons
+                            </b>
+                            <a href="#icons"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>icons:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>Icons.solid</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isFirstProject"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            isFirstProject
+                            </b>
+                            <a href="#isFirstProject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>isFirstProject:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="parentId"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            parentId
+                            </b>
+                            <a href="#parentId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>parentId:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="parentOrganization"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            parentOrganization
+                            </b>
+                            <a href="#parentOrganization"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>parentOrganization:     <code><a href="../interfaces/OrganizationModel.html" target="_self" >OrganizationModel</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/OrganizationModel.html" target="_self" >OrganizationModel</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resourceType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            resourceType
+                            </b>
+                            <a href="#resourceType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>resourceType:     <code><a href="../interfaces/Resource.html" target="_self" >ResourceType</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/Resource.html" target="_self" >ResourceType</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subscriptions"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            subscriptions
+                            </b>
+                            <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>subscriptions:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subscription()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="codeInput"></a>
+                        <span class="name"><b>codeInput</b><a href="#codeInput"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>codeInput()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:73</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nameInput"></a>
+                        <span class="name"><b>nameInput</b><a href="#nameInput"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>nameInput()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/dialog/create-resource/create-resource-dialog.component.ts:77</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnDestroy, OnInit} from &#x27;@angular/core&#x27;;
+import {AbstractControl, AsyncValidatorFn, FormControl, FormGroup, Validators} from &#x27;@angular/forms&#x27;;
+
+import {ActivatedRoute} from &#x27;@angular/router&#x27;;
+import {Action, Store} from &#x27;@ngrx/store&#x27;;
+import {map, take} from &#x27;rxjs/operators&#x27;;
+import {DEFAULT_COLOR, DEFAULT_ICON} from &#x27;../../core/constants&#x27;;
+import {AppState} from &#x27;../../core/store/app.state&#x27;;
+import {DialogService} from &#x27;../dialog.service&#x27;;
+import {ResourceType} from &#x27;../../core/model/resource-type&#x27;;
+import {ResourceModel} from &#x27;../../core/model/resource.model&#x27;;
+import {OrganizationsAction} from &#x27;../../core/store/organizations/organizations.action&#x27;;
+import {ProjectsAction} from &#x27;../../core/store/projects/projects.action&#x27;;
+import {ProjectValidators} from &#x27;../../core/validators/project.validators&#x27;;
+import {OrganizationValidators} from &#x27;../../core/validators/organization.validators&#x27;;
+import {selectOrganizationById} from &#x27;../../core/store/organizations/organizations.state&#x27;;
+import {Subscription} from &#x27;rxjs&#x27;;
+import {DialogPath, dialogPathsMap} from &#x27;../dialog-path&#x27;;
+import {OrganizationModel} from &#x27;../../core/store/organizations/organization.model&#x27;;
+import {selectProjectsByOrganizationId} from &#x27;../../core/store/projects/projects.state&#x27;;
+import * as Colors from &#x27;../../shared/picker/color-picker/colors&#x27;;
+import * as Icons from &#x27;../../shared/picker/icon-picker/icons&#x27;;
+
+@Component({
+  selector: &#x27;create-resource-dialog&#x27;,
+  templateUrl: &#x27;./create-resource-dialog.component.html&#x27;,
+})
+export class CreateResourceDialogComponent implements OnInit, OnDestroy {
+  public form: FormGroup;
+
+  public color: string &#x3D; DEFAULT_COLOR;
+  public icon: string &#x3D; DEFAULT_ICON;
+
+  public resourceType: ResourceType;
+
+  public parentId: string;
+  public parentOrganization: OrganizationModel;
+  public isFirstProject: boolean;
+  public subscriptions &#x3D; new Subscription();
+
+  private icons &#x3D; Icons.solid;
+  private colors &#x3D; Colors.palette;
+
+  constructor(
+    private dialogService: DialogService,
+    private projectValidators: ProjectValidators,
+    private organizationValidators: OrganizationValidators,
+    private route: ActivatedRoute,
+    private store: Store&lt;AppState&gt;
+  ) {
+    this.createForm();
+  }
+
+  public get codeInput(): AbstractControl {
+    return this.form.get(&#x27;code&#x27;);
+  }
+
+  public get nameInput(): AbstractControl {
+    return this.form.get(&#x27;name&#x27;);
+  }
+
+  public ngOnInit() {
+    this.reset();
+    this.parseResourceType();
+    this.color &#x3D; this.colors[Math.round(Math.random() * this.colors.length)];
+    this.icon &#x3D; this.icons[Math.round(Math.random() * this.icons.length)];
+  }
+
+  public ngOnDestroy() {
+    this.subscriptions.unsubscribe();
+  }
+
+  private createForm() {
+    this.form &#x3D; new FormGroup({
+      code: new FormControl(&#x27;&#x27;, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]),
+      name: new FormControl(&#x27;&#x27;),
+    });
+  }
+
+  public reset() {
+    this.color &#x3D; DEFAULT_COLOR;
+    this.icon &#x3D; DEFAULT_ICON;
+    this.form.reset();
+  }
+
+  public onSubmit() {
+    const callback &#x3D; this.dialogService.callback;
+
+    const action &#x3D; this.createResourceAction();
+    if (action) {
+      this.store.dispatch(action);
+    }
+
+    if (!callback) {
+      this.dialogService.closeDialog();
+    }
+  }
+
+  public canShowContent(): Boolean {
+    return this.resourceType &#x3D;&#x3D;&#x3D; ResourceType.Organization || !!this.parentOrganization;
+  }
+
+  private createAsyncValidator(): AsyncValidatorFn {
+    if (this.resourceType &#x3D;&#x3D;&#x3D; ResourceType.Organization) {
+      return this.organizationValidators.uniqueCode();
+    } else if (this.resourceType &#x3D;&#x3D;&#x3D; ResourceType.Project) {
+      return this.projectValidators.uniqueCode();
+    }
+
+    return null;
+  }
+
+  private createResourceAction(): Action {
+    const resource &#x3D; this.createResourceObject();
+
+    if (this.resourceType &#x3D;&#x3D;&#x3D; ResourceType.Organization) {
+      return new OrganizationsAction.Create({organization: resource, callback: this.dialogService.callback});
+    } else if (this.resourceType &#x3D;&#x3D;&#x3D; ResourceType.Project) {
+      const project &#x3D; {...resource, organizationId: this.parentId};
+      return new ProjectsAction.Create({project, callback: this.dialogService.callback});
+    }
+
+    return null;
+  }
+
+  private createResourceObject(): ResourceModel {
+    return {
+      name: this.nameInput.value,
+      code: this.codeInput.value,
+      color: this.color,
+      icon: this.icon,
+      description: &#x27;&#x27;,
+    };
+  }
+
+  private parseResourceType() {
+    this.resourceType &#x3D; this.getResourceTypeFromRouter();
+
+    this.route.paramMap
+      .pipe(
+        map(params &#x3D;&gt; params.get(&#x27;organizationId&#x27;)),
+        take(1)
+      )
+      .subscribe(parentId &#x3D;&gt; {
+        this.parentId &#x3D; parentId;
+        if (this.resourceType &#x3D;&#x3D;&#x3D; ResourceType.Project &amp;&amp; parentId) {
+          this.projectValidators.setOrganizationId(parentId);
+          this.selectData();
+        }
+
+        this.codeInput.setAsyncValidators(this.createAsyncValidator());
+      });
+  }
+
+  private selectData() {
+    this.subscriptions.add(
+      this.store
+        .select(selectOrganizationById(this.parentId))
+        .subscribe(resource &#x3D;&gt; (this.parentOrganization &#x3D; resource))
+    );
+    this.subscriptions.add(
+      this.store
+        .select(selectProjectsByOrganizationId(this.parentId))
+        .subscribe(projects &#x3D;&gt; (this.isFirstProject &#x3D; projects.length &#x3D;&#x3D;&#x3D; 0))
+    );
+  }
+
+  private getResourceTypeFromRouter(): ResourceType {
+    const [rootPath] &#x3D; this.route.routeConfig.path.split(&#x27;/&#x27;);
+    const dialogPath &#x3D; dialogPathsMap[rootPath];
+    if (dialogPath &#x3D;&#x3D;&#x3D; DialogPath.CREATE_ORGANIZATION) {
+      return ResourceType.Organization;
+    } else if (dialogPath &#x3D;&#x3D;&#x3D; DialogPath.CREATE_PROJECT) {
+      return ResourceType.Project;
+    }
+    return null;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;dialog-wrapper [submitDisabled]&#x3D;&quot;!form.valid&quot;
+                [type]&#x3D;&quot;&#x27;primary&#x27;&quot;
+                [width]&#x3D;&quot;350&quot;
+                [showSubmit]&#x3D;&quot;canShowContent()&quot;
+                (submit)&#x3D;&quot;onSubmit()&quot;&gt;
+  &lt;span class&#x3D;&quot;title&quot; i18n&#x3D;&quot;@@resource.new.dialog.title&quot;&gt;
+  Create new {resourceType, select, organization {Organization} project {Project}}
+  &lt;/span&gt;
+
+  &lt;div class&#x3D;&quot;body&quot;&gt;
+    &lt;form [formGroup]&#x3D;&quot;form&quot;
+          *ngIf&#x3D;&quot;canShowContent(); else invalidResource&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;parentOrganization&quot;
+           [ngClass]&#x3D;&quot;isFirstProject ? &#x27;alert alert-warning&#x27; : null&quot;&gt;
+        &lt;span *ngIf&#x3D;&quot;isFirstProject&quot; class&#x3D;&quot;mr-2&quot;
+              i18n&#x3D;&quot;@@resource.new.dialog.project.subtitle.first&quot;&gt;Your organization is missing a project, create one first!&lt;/span&gt;
+        &lt;span *ngIf&#x3D;&quot;!isFirstProject&quot; class&#x3D;&quot;mr-2&quot;
+              i18n&#x3D;&quot;@@resource.new.dialog.project.subtitle&quot;&gt;Create project in organization:&lt;/span&gt;&lt;br/&gt;
+        &lt;i class&#x3D;&quot;fa-fw {{ parentOrganization.icon }}&quot;
+           [style.color]&#x3D;&quot;parentOrganization.color&quot;&gt;&lt;/i&gt;&amp;nbsp;
+        &lt;span [style.color]&#x3D;&quot;parentOrganization.color&quot;&gt;[{{parentOrganization.code}}] {{parentOrganization.name}}&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;hr *ngIf&#x3D;&quot;parentOrganization&quot;/&gt;
+
+      &lt;div class&#x3D;&quot;form-group&quot;&gt;
+
+        &lt;label class&#x3D;&quot;col-form-label mb-2&quot;&gt;
+          &lt;span i18n&#x3D;&quot;@@resource.new.dialog.icon.label&quot;&gt;
+            Icon:
+          &lt;/span&gt;
+          &lt;span class&#x3D;&quot;ml-4 text-muted small&quot; i18n&#x3D;&quot;@@resource.new.dialog.icon.label.hint&quot;&gt;
+            (click the icon to change it)
+          &lt;/span&gt;
+        &lt;/label&gt;
+
+        &lt;icon-chooser [(color)]&#x3D;&quot;color&quot;
+                      [(icon)]&#x3D;&quot;icon&quot;
+                      class&#x3D;&quot;d-block mb-3&quot;&gt;
+        &lt;/icon-chooser&gt;
+      &lt;/div&gt;
+
+      &lt;resource-code-input
+        [form]&#x3D;&quot;form&quot;&gt;
+      &lt;/resource-code-input&gt;
+
+      &lt;resource-name-input
+        [form]&#x3D;&quot;form&quot;&gt;
+      &lt;/resource-name-input&gt;
+
+    &lt;/form&gt;
+
+    &lt;ng-template #invalidResource&gt;
+      &lt;h4 class&#x3D;&quot;text-danger text-center&quot;
+          i18n&#x3D;&quot;@@resource.new.dialog.invalid&quot;&gt;I am sorry, something went wrong.
+      &lt;/h4&gt;
+    &lt;/ng-template&gt;
+
+    &lt;div class&#x3D;&quot;small text-muted&quot;&gt;&lt;sup&gt;*&lt;/sup&gt;&amp;nbsp;&lt;span i18n&#x3D;&quot;@@resource.new.dialog.required&quot;&gt;Required&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;span class&#x3D;&quot;button-cancel&quot; i18n&#x3D;&quot;@@button.cancel&quot;&gt;Cancel&lt;/span&gt;
+  &lt;span class&#x3D;&quot;button-submit&quot; i18n&#x3D;&quot;@@button.create&quot;&gt;Create&lt;/span&gt;
+
+&lt;/dialog-wrapper&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><dialog-wrapper [submitDisabled]="!form.valid"                [type]="\'primary\'"                [width]="350"                [showSubmit]="canShowContent()"                (submit)="onSubmit()">  <span class="title" i18n="@@resource.new.dialog.title">  Create new {resourceType, select, organization {Organization} project {Project}}  </span>  <div class="body">    <form [formGroup]="form"          *ngIf="canShowContent(); else invalidResource">      <div *ngIf="parentOrganization"           [ngClass]="isFirstProject ? \'alert alert-warning\' : null">        <span *ngIf="isFirstProject" class="mr-2"              i18n="@@resource.new.dialog.project.subtitle.first">Your organization is missing a project, create one first!</span>        <span *ngIf="!isFirstProject" class="mr-2"              i18n="@@resource.new.dialog.project.subtitle">Create project in organization:</span><br/>        <i class="fa-fw {{ parentOrganization.icon }}"           [style.color]="parentOrganization.color"></i>&nbsp;        <span [style.color]="parentOrganization.color">[{{parentOrganization.code}}] {{parentOrganization.name}}</span>      </div>      <hr *ngIf="parentOrganization"/>      <div class="form-group">        <label class="col-form-label mb-2">          <span i18n="@@resource.new.dialog.icon.label">            Icon:          </span>          <span class="ml-4 text-muted small" i18n="@@resource.new.dialog.icon.label.hint">            (click the icon to change it)          </span>        </label>        <icon-chooser [(color)]="color"                      [(icon)]="icon"                      class="d-block mb-3">        </icon-chooser>      </div>      <resource-code-input        [form]="form">      </resource-code-input>      <resource-name-input        [form]="form">      </resource-name-input>    </form>    <ng-template #invalidResource>      <h4 class="text-danger text-center"          i18n="@@resource.new.dialog.invalid">I am sorry, something went wrong.      </h4>    </ng-template>    <div class="small text-muted"><sup>*</sup>&nbsp;<span i18n="@@resource.new.dialog.required">Required</span></div>  </div>  <span class="button-cancel" i18n="@@button.cancel">Cancel</span>  <span class="button-submit" i18n="@@button.create">Create</span></dialog-wrapper></div>'
+    var COMPONENTS = [{'name': 'AgreementComponent', 'selector': 'agreement'},{'name': 'AppComponent', 'selector': 'lmr-app'},{'name': 'AttributeConditionComponent', 'selector': 'attribute-condition'},{'name': 'AttributeValueComponent', 'selector': 'attribute-value'},{'name': 'AuthCallbackComponent', 'selector': 'auth-callback'},{'name': 'ChartConfigComponent', 'selector': 'chart-config'},{'name': 'ChartPerspectiveComponent', 'selector': 'chart-perspective'},{'name': 'ChartVisualizationComponent', 'selector': 'chart-visualization'},{'name': 'CollapsibleSidebarComponent', 'selector': 'collapsible-sidebar'},{'name': 'CollapsibleSidebarToggleComponent', 'selector': 'collapsible-sidebar-toggle'},{'name': 'CollectionAttributesComponent', 'selector': ''},{'name': 'CollectionLinkTypesComponent', 'selector': ''},{'name': 'CollectionNameInputComponent', 'selector': 'collection-name-input'},{'name': 'CollectionSettingsComponent', 'selector': ''},{'name': 'CollectionUsersComponent', 'selector': ''},{'name': 'ColorPickerComponent', 'selector': 'color-picker'},{'name': 'CommentsComponent', 'selector': 'comments'},{'name': 'ConditionSuggestionsComponent', 'selector': 'condition-suggestions'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ControlsToggleComponent', 'selector': 'controls-toggle'},{'name': 'CreateCollectionDialogComponent', 'selector': 'create-collection-dialog'},{'name': 'CreateLinkDialogComponent', 'selector': 'create-link-dialog'},{'name': 'CreateResourceDialogComponent', 'selector': 'create-resource-dialog'},{'name': 'DetailPerspectiveComponent', 'selector': 'detail-perspective'},{'name': 'DialogBaseComponent', 'selector': 'dialog-base'},{'name': 'DialogWrapperComponent', 'selector': 'dialog-wrapper'},{'name': 'DocumentDetailComponent', 'selector': 'document-detail'},{'name': 'DocumentHintsComponent', 'selector': 'document-hints'},{'name': 'EmptyCollectionsComponent', 'selector': 'empty-collections'},{'name': 'EmptyDataComponent', 'selector': 'empty-data'},{'name': 'EmptyDocumentsComponent', 'selector': 'empty-documents'},{'name': 'EmptyMapComponent', 'selector': 'empty-map'},{'name': 'EmptyPostItsComponent', 'selector': 'empty-post-its'},{'name': 'EmptyRecordsComponent', 'selector': 'empty-records'},{'name': 'EmptySearchComponent', 'selector': 'empty-search'},{'name': 'EmptyStateComponent', 'selector': 'empty-state'},{'name': 'EmptyViewsComponent', 'selector': 'empty-views'},{'name': 'FeedbackDialogComponent', 'selector': 'feedback-dialog'},{'name': 'FilterBoxComponent', 'selector': 'filter-box'},{'name': 'GroupsSuggestionsComponent', 'selector': 'group-suggestions'},{'name': 'HomeComponent', 'selector': ''},{'name': 'IconComponent', 'selector': 'icon-chooser'},{'name': 'IconPickerComponent', 'selector': 'icon-picker'},{'name': 'IconsPresenterComponent', 'selector': 'icons-presenter'},{'name': 'InputBoxComponent', 'selector': 'input-box'},{'name': 'InvalidQueryComponent', 'selector': 'invalid-query'},{'name': 'KeyValueComponent', 'selector': 'key-value'},{'name': 'LinkNameInputComponent', 'selector': 'link-name-input'},{'name': 'LinkTypeComponent', 'selector': '[link-type]'},{'name': 'LinksComponent', 'selector': 'links'},{'name': 'LinksListComponent', 'selector': 'links-list'},{'name': 'LinksListTableBodyComponent', 'selector': '[links-list-table-body]'},{'name': 'LinksListTableComponent', 'selector': 'links-list-table'},{'name': 'LinksListTableHeaderComponent', 'selector': '[links-list-table-header]'},{'name': 'LinksListTabsComponent', 'selector': 'links-list-tabs'},{'name': 'LogoutComponent', 'selector': 'logout'},{'name': 'LumeerLogoComponent', 'selector': 'lumeer-logo'},{'name': 'MapAttributeGroupComponent', 'selector': 'map-attribute-group'},{'name': 'MapAttributeSelectComponent', 'selector': 'map-attribute-select'},{'name': 'MapContentComponent', 'selector': 'map-content'},{'name': 'MapPanelComponent', 'selector': 'map-panel'},{'name': 'MapPerspectiveComponent', 'selector': 'map-perspective'},{'name': 'MapRenderComponent', 'selector': 'map-render'},{'name': 'NewUserComponent', 'selector': 'new-user'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OrganizationDetailComponent', 'selector': ''},{'name': 'OrganizationGroupsComponent', 'selector': ''},{'name': 'OrganizationRegistrationComponent', 'selector': ''},{'name': 'OrganizationSettingsComponent', 'selector': ''},{'name': 'OrganizationUsersComponent', 'selector': ''},{'name': 'OverwriteViewDialogComponent', 'selector': 'overwrite-view-dialog'},{'name': 'PaymentsListComponent', 'selector': 'payments-list'},{'name': 'PaymentsOrderComponent', 'selector': 'payments-order'},{'name': 'PaymentsPanelComponent', 'selector': 'payments-panel'},{'name': 'PaymentsStateComponent', 'selector': 'payments-state'},{'name': 'PostItAddDocumentComponent', 'selector': 'add-document'},{'name': 'PostItCollectionAddButtonComponent', 'selector': 'post-it-collection-add-button'},{'name': 'PostItCollectionComponent', 'selector': 'post-it-collection'},{'name': 'PostItCollectionImportButtonComponent', 'selector': 'post-it-collection-import-button'},{'name': 'PostItCollectionNameComponent', 'selector': 'post-it-collection-name'},{'name': 'PostItCollectionsComponent', 'selector': 'post-it-collections'},{'name': 'PostItDocumentCellComponent', 'selector': 'post-it-document-cell'},{'name': 'PostItDocumentComponent', 'selector': 'post-it-document'},{'name': 'PostItDocumentHeaderComponent', 'selector': 'post-it-document-header'},{'name': 'PostItPerspectiveComponent', 'selector': 'post-it-perspective'},{'name': 'PreviewResultsComponent', 'selector': 'preview-results'},{'name': 'PreviewResultsTableComponent', 'selector': 'preview-results-table'},{'name': 'PreviewResultsTabsComponent', 'selector': 'preview-results-tabs'},{'name': 'ProjectSettingsComponent', 'selector': ''},{'name': 'ProjectUsersComponent', 'selector': ''},{'name': 'QueryItemComponent', 'selector': 'query-item'},{'name': 'ResourceChooserComponent', 'selector': 'resource-chooser'},{'name': 'ResourceCodeInputComponent', 'selector': 'resource-code-input'},{'name': 'ResourceDetailComponent', 'selector': 'resource-detail'},{'name': 'ResourceHeaderComponent', 'selector': 'resource-header'},{'name': 'ResourceListComponent', 'selector': 'resource-list'},{'name': 'ResourceMenuComponent', 'selector': 'resource-menu'},{'name': 'ResourceNameInputComponent', 'selector': 'resource-name-input'},{'name': 'ResourcePostItComponent', 'selector': 'resource-post-it'},{'name': 'ResourceStatusLineComponent', 'selector': 'resource-status-line'},{'name': 'SearchAllComponent', 'selector': ''},{'name': 'SearchBoxComponent', 'selector': 'search-box'},{'name': 'SearchButtonComponent', 'selector': 'search-button'},{'name': 'SearchCollectionsComponent', 'selector': ''},{'name': 'SearchDocumentHeaderComponent', 'selector': 'search-document-header'},{'name': 'SearchDocumentsComponent', 'selector': 'search-documents'},{'name': 'SearchInputComponent', 'selector': 'search-input'},{'name': 'SearchLinksComponent', 'selector': ''},{'name': 'SearchPerspectiveComponent', 'selector': ''},{'name': 'SearchSuggestionsComponent', 'selector': 'search-suggestions'},{'name': 'SearchViewsComponent', 'selector': 'search-views'},{'name': 'SelectItemComponent', 'selector': 'select-item'},{'name': 'SessionExpiredComponent', 'selector': 'session-expired'},{'name': 'ShareUserComponent', 'selector': '[share-user]'},{'name': 'ShareViewCopyComponent', 'selector': 'share-view-copy'},{'name': 'ShareViewDialogComponent', 'selector': 'share-view-dialog'},{'name': 'ShareViewInputComponent', 'selector': 'share-view-input'},{'name': 'SizeSliderComponent', 'selector': 'size-slider'},{'name': 'SliderComponent', 'selector': 'slider'},{'name': 'SuggestionItemComponent', 'selector': 'search-suggestion-item'},{'name': 'TableAttributeSuggestionsComponent', 'selector': 'table-attribute-suggestions'},{'name': 'TableBodyComponent', 'selector': 'table-body'},{'name': 'TableCaptionComponent', 'selector': 'table-caption'},{'name': 'TableCellGroupComponent', 'selector': 'table-cell-group'},{'name': 'TableCollapsedCellComponent', 'selector': 'table-collapsed-cell'},{'name': 'TableCollapsedCellMenuComponent', 'selector': 'table-collapsed-cell-menu'},{'name': 'TableColumnContextMenuComponent', 'selector': 'table-column-context-menu'},{'name': 'TableColumnGroupComponent', 'selector': 'table-column-group'},{'name': 'TableDataCellComponent', 'selector': 'table-data-cell'},{'name': 'TableDataCellMenuComponent', 'selector': 'table-data-cell-menu'},{'name': 'TableHeaderAddButtonComponent', 'selector': 'table-header-add-button'},{'name': 'TableHeaderCollectionComponent', 'selector': 'table-header-collection'},{'name': 'TableHeaderComponent', 'selector': 'table-header'},{'name': 'TableHeaderLinkComponent', 'selector': 'table-header-link'},{'name': 'TableHiddenColumnComponent', 'selector': 'table-hidden-column'},{'name': 'TableHierarchyCellComponent', 'selector': 'table-hierarchy-cell'},{'name': 'TableHierarchyCellMenuComponent', 'selector': 'table-hierarchy-cell-menu'},{'name': 'TableHierarchyColumnComponent', 'selector': 'table-hierarchy-column'},{'name': 'TableLinkCellComponent', 'selector': 'table-link-cell'},{'name': 'TableLinkInfoComponent', 'selector': 'table-link-info'},{'name': 'TableLinkedRowComponent', 'selector': 'table-linked-row'},{'name': 'TableLinkedRowsComponent', 'selector': 'table-linked-rows'},{'name': 'TablePerspectiveComponent', 'selector': 'table-perspective'},{'name': 'TablePrimaryRowComponent', 'selector': 'table-primary-row'},{'name': 'TableRowGroupComponent', 'selector': 'table-row-group'},{'name': 'TableRowGroupFooterComponent', 'selector': 'table-row-group-footer'},{'name': 'TableRowGroupHeaderComponent', 'selector': 'table-row-group-header'},{'name': 'TableRowNumbersComponent', 'selector': 'table-row-numbers'},{'name': 'TableRowsComponent', 'selector': 'table-rows'},{'name': 'TableSingleColumnComponent', 'selector': 'table-single-column'},{'name': 'TagComponent', 'selector': 'tag'},{'name': 'TopPanelComponent', 'selector': 'top-panel'},{'name': 'TopPanelWrapperComponent', 'selector': 'top-panel-wrapper'},{'name': 'UserComponent', 'selector': '[user]'},{'name': 'UserGroupsComponent', 'selector': 'user-groups'},{'name': 'UserListComponent', 'selector': 'user-list'},{'name': 'UserMenuComponent', 'selector': 'user-menu'},{'name': 'UserPanelComponent', 'selector': 'user-panel'},{'name': 'UsersComponent', 'selector': 'users'},{'name': 'ViewComponent', 'selector': ''},{'name': 'ViewControlsComponent', 'selector': 'view-controls'},{'name': 'ViewDetailComponent', 'selector': 'view-detail'},{'name': 'ViewLoadingComponent', 'selector': 'view-loading'},{'name': 'WorkspaceChooserComponent', 'selector': 'workspace-chooser'},{'name': 'WorkspacePanelComponent', 'selector': 'workspace-panel'}];
+    var DIRECTIVES = [{'name': 'DraggableDirective', 'selector': '[lmrDraggable]'},{'name': 'DropTargetDirective', 'selector': '[lmrDropTarget]'},{'name': 'LayoutItemDirective', 'selector': '[layout-item]'},{'name': 'NgVarDirective', 'selector': '[ngVar]'},{'name': 'PerspectiveDirective', 'selector': '[perspective]'},{'name': 'RemovePlaceholderOnFocusDirective', 'selector': '[remove-placeholder-on-focus]'},{'name': 'SearchResultsDirective', 'selector': '[search-results]'},{'name': 'TableEditableCellDirective', 'selector': '[tableEditableCell]'},{'name': 'TrimValueAccessor', 'selector': 'input[trim], textarea[trim], div[trim]'}];
+    var ACTUAL_COMPONENT = {'name': 'CreateResourceDialogComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateResourceDialogComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

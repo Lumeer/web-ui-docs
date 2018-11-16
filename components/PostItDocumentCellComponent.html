@@ -1,0 +1,1138 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PostItDocumentCellComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>post-it-document-cell</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>post-it-document-cell.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./post-it-document-cell.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnChanges">ngOnChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onBlur">onBlur</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onEnter">onEnter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onRemove">onRemove</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#additionalClasses">additionalClasses</a>
+                            </li>
+                            <li>
+                                <a href="#column">column</a>
+                            </li>
+                            <li>
+                                <a href="#index">index</a>
+                            </li>
+                            <li>
+                                <a href="#key">key</a>
+                            </li>
+                            <li>
+                                <a href="#model">model</a>
+                            </li>
+                            <li>
+                                <a href="#perspectiveId">perspectiveId</a>
+                            </li>
+                            <li>
+                                <a href="#readonly">readonly</a>
+                            </li>
+                            <li>
+                                <a href="#row">row</a>
+                            </li>
+                            <li>
+                                <a href="#selectionHelper">selectionHelper</a>
+                            </li>
+                            <li>
+                                <a href="#suggestionListId">suggestionListId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#enter">enter</a>
+                            </li>
+                            <li>
+                                <a href="#focus">focus</a>
+                            </li>
+                            <li>
+                                <a href="#remove">remove</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostBindings</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#attr.tabindex">attr.tabindex</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#focus">focus</a>
+                            </li>
+                            <li>
+                                <a href="#keydown">keydown</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="additionalClasses"></a>
+                        <code>additionalClasses</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:44</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="column"></a>
+                        <code>column</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:49</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="index"></a>
+                        <code>index</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:47</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="key"></a>
+                        <code>key</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:46</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="model"></a>
+                        <code>model</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:45</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="perspectiveId"></a>
+                        <code>perspectiveId</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:42</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="readonly"></a>
+                        <code>readonly</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:51</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="row"></a>
+                        <code>row</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:48</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="selectionHelper"></a>
+                        <code>selectionHelper</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="../classes/SelectionHelper.html" target="_self" >SelectionHelper</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:50</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="suggestionListId"></a>
+                        <code>suggestionListId</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:43</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="enter"></a>
+                        <code>enter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <em><code>$event</code> Type:</em>    <code><a href="../interfaces/Event.html" target="_self" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:55</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="focus"></a>
+                        <code>focus</code>
+                    </td>
+                    <td class="col-md-10">
+                        <em><code>$event</code> Type:</em>    <code><a href="../interfaces/Event.html" target="_self" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:53</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="remove"></a>
+                        <code>remove</code>
+                    </td>
+                    <td class="col-md-10">
+                        <em><code>$event</code> Type:</em>    <code><a href="../interfaces/Event.html" target="_self" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:56</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="update"></a>
+                        <code>update</code>
+                    </td>
+                    <td class="col-md-10">
+                        <em><code>$event</code> Type:</em>    <code><a href="../interfaces/Event.html" target="_self" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:54</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3>HostBindings</h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="attr.tabindex"></a>
+                        <span class="name">
+                            <b>
+                            attr.tabindex
+                            </b>
+                            <a href="#attr.tabindex"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>attr.tabindex:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id
+                            </b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>id:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title
+                            </b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>title:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3>HostListeners</h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="focus"></a>
+                        <span class="name">
+                            <b>
+                            focus
+                            </b>
+                            <a href="#focus"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Arguments : </i><code>'$event' </code>
+                        </td>
+                    </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>focus(event: <a href="../interfaces/Event.html">FocusEvent</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="keydown"></a>
+                        <span class="name">
+                            <b>
+                            keydown
+                            </b>
+                            <a href="#keydown"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Arguments : </i><code>'$event' </code>
+                        </td>
+                    </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>keydown(event: <a href="../interfaces/Event.html">KeyboardEvent</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnChanges"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnChanges
+                            </b>
+                            <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:96</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>changes</td>
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onBlur"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onBlur
+                            </b>
+                            <a href="#onBlur"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onBlur()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:112</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onEnter"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onEnter
+                            </b>
+                            <a href="#onEnter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onEnter()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:108</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onRemove"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onRemove
+                            </b>
+                            <a href="#onRemove"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onRemove()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/view/perspectives/post-it/document/post-it-document-cell/post-it-document-cell.component.ts:102</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  HostBinding,
+  HostListener,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges,
+} from &#x27;@angular/core&#x27;;
+import {KeyCode} from &#x27;../../../../../shared/key-code&#x27;;
+
+import {SelectionHelper} from &#x27;../../util/selection-helper&#x27;;
+
+@Component({
+  selector: &#x27;post-it-document-cell&#x27;,
+  templateUrl: &#x27;./post-it-document-cell.component.html&#x27;,
+  styleUrls: [&#x27;./post-it-document-cell.component.scss&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class PostItDocumentCellComponent implements OnChanges {
+  @Input() public perspectiveId: string;
+  @Input() public suggestionListId: string;
+  @Input() public additionalClasses: string;
+  @Input() public model: string;
+  @Input() public key: string;
+  @Input() public index: number;
+  @Input() public row: number;
+  @Input() public column: number;
+  @Input() public selectionHelper: SelectionHelper;
+  @Input() public readonly: boolean;
+
+  @Output() public focus &#x3D; new EventEmitter();
+  @Output() public update &#x3D; new EventEmitter&lt;string&gt;();
+  @Output() public enter &#x3D; new EventEmitter();
+  @Output() public remove &#x3D; new EventEmitter();
+
+  @HostBinding(&#x27;id&#x27;) public id: string;
+  @HostBinding(&#x27;attr.tabindex&#x27;) public tabindex: number;
+  @HostBinding(&#x27;title&#x27;) public title: string;
+
+  @HostListener(&#x27;focus&#x27;, [&#x27;$event&#x27;])
+  public hostFocus(event: FocusEvent) {
+    if (event) {
+      this.focus.emit();
+    }
+  }
+
+  @HostListener(&#x27;keydown&#x27;, [&#x27;$event&#x27;])
+  public keydown(event: KeyboardEvent) {
+    switch (event.code) {
+      case KeyCode.ArrowRight:
+        this.selectionHelper.moveRight();
+        break;
+      case KeyCode.ArrowLeft:
+        this.selectionHelper.moveLeft();
+        break;
+      case KeyCode.ArrowDown:
+        this.selectionHelper.moveDown();
+        break;
+      case KeyCode.ArrowUp:
+        this.selectionHelper.moveUp();
+        break;
+      case KeyCode.Enter:
+      case KeyCode.NumpadEnter:
+      case KeyCode.F2:
+        this.selectionHelper.focusToggle(true);
+        break;
+      case KeyCode.Backspace:
+      case KeyCode.Delete:
+        this.onRemove();
+        break;
+    }
+  }
+
+  public ngOnChanges(changes: SimpleChanges) {
+    this.id &#x3D; &#x60;${this.perspectiveId}#${this.key}#${this.column}#${this.row}&#x60;;
+    this.tabindex &#x3D; this.index * 1000 + this.row * 2 + this.column;
+    this.title &#x3D; this.model;
+  }
+
+  public onRemove() {
+    if (!this.readonly) {
+      this.remove.emit();
+    }
+  }
+
+  public onEnter() {
+    this.enter.emit();
+  }
+
+  public onBlur() {
+    if (!this.readonly) {
+      this.model &#x3D; this.model.trim();
+      this.update.emit(this.model);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;input class&#x3D;&quot;border-0 w-100 {{additionalClasses}}&quot;
+       [(ngModel)]&#x3D;&quot;model&quot;
+       [disabled]&#x3D;&quot;readonly&quot;
+       [attr.list]&#x3D;&quot;suggestionListId&quot;
+       (keydown)&#x3D;&quot;$event.stopPropagation()&quot;
+       (keydown.F2)&#x3D;&quot;selectionHelper.focusToggle(false)&quot;
+       (keydown.Escape)&#x3D;&quot;selectionHelper.focusToggle(false)&quot;
+       (keydown.enter)&#x3D;&quot;onEnter()&quot;
+       (blur)&#x3D;&quot;onBlur()&quot;&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><input class="border-0 w-100 {{additionalClasses}}"       [(ngModel)]="model"       [disabled]="readonly"       [attr.list]="suggestionListId"       (keydown)="$event.stopPropagation()"       (keydown.F2)="selectionHelper.focusToggle(false)"       (keydown.Escape)="selectionHelper.focusToggle(false)"       (keydown.enter)="onEnter()"       (blur)="onBlur()"></div>'
+    var COMPONENTS = [{'name': 'AgreementComponent', 'selector': 'agreement'},{'name': 'AppComponent', 'selector': 'lmr-app'},{'name': 'AttributeConditionComponent', 'selector': 'attribute-condition'},{'name': 'AttributeValueComponent', 'selector': 'attribute-value'},{'name': 'AuthCallbackComponent', 'selector': 'auth-callback'},{'name': 'ChartConfigComponent', 'selector': 'chart-config'},{'name': 'ChartPerspectiveComponent', 'selector': 'chart-perspective'},{'name': 'ChartVisualizationComponent', 'selector': 'chart-visualization'},{'name': 'CollapsibleSidebarComponent', 'selector': 'collapsible-sidebar'},{'name': 'CollapsibleSidebarToggleComponent', 'selector': 'collapsible-sidebar-toggle'},{'name': 'CollectionAttributesComponent', 'selector': ''},{'name': 'CollectionLinkTypesComponent', 'selector': ''},{'name': 'CollectionNameInputComponent', 'selector': 'collection-name-input'},{'name': 'CollectionSettingsComponent', 'selector': ''},{'name': 'CollectionUsersComponent', 'selector': ''},{'name': 'ColorPickerComponent', 'selector': 'color-picker'},{'name': 'CommentsComponent', 'selector': 'comments'},{'name': 'ConditionSuggestionsComponent', 'selector': 'condition-suggestions'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ControlsToggleComponent', 'selector': 'controls-toggle'},{'name': 'CreateCollectionDialogComponent', 'selector': 'create-collection-dialog'},{'name': 'CreateLinkDialogComponent', 'selector': 'create-link-dialog'},{'name': 'CreateResourceDialogComponent', 'selector': 'create-resource-dialog'},{'name': 'DetailPerspectiveComponent', 'selector': 'detail-perspective'},{'name': 'DialogBaseComponent', 'selector': 'dialog-base'},{'name': 'DialogWrapperComponent', 'selector': 'dialog-wrapper'},{'name': 'DocumentDetailComponent', 'selector': 'document-detail'},{'name': 'DocumentHintsComponent', 'selector': 'document-hints'},{'name': 'EmptyCollectionsComponent', 'selector': 'empty-collections'},{'name': 'EmptyDataComponent', 'selector': 'empty-data'},{'name': 'EmptyDocumentsComponent', 'selector': 'empty-documents'},{'name': 'EmptyMapComponent', 'selector': 'empty-map'},{'name': 'EmptyPostItsComponent', 'selector': 'empty-post-its'},{'name': 'EmptyRecordsComponent', 'selector': 'empty-records'},{'name': 'EmptySearchComponent', 'selector': 'empty-search'},{'name': 'EmptyStateComponent', 'selector': 'empty-state'},{'name': 'EmptyViewsComponent', 'selector': 'empty-views'},{'name': 'FeedbackDialogComponent', 'selector': 'feedback-dialog'},{'name': 'FilterBoxComponent', 'selector': 'filter-box'},{'name': 'GroupsSuggestionsComponent', 'selector': 'group-suggestions'},{'name': 'HomeComponent', 'selector': ''},{'name': 'IconComponent', 'selector': 'icon-chooser'},{'name': 'IconPickerComponent', 'selector': 'icon-picker'},{'name': 'IconsPresenterComponent', 'selector': 'icons-presenter'},{'name': 'InputBoxComponent', 'selector': 'input-box'},{'name': 'InvalidQueryComponent', 'selector': 'invalid-query'},{'name': 'KeyValueComponent', 'selector': 'key-value'},{'name': 'LinkNameInputComponent', 'selector': 'link-name-input'},{'name': 'LinkTypeComponent', 'selector': '[link-type]'},{'name': 'LinksComponent', 'selector': 'links'},{'name': 'LinksListComponent', 'selector': 'links-list'},{'name': 'LinksListTableBodyComponent', 'selector': '[links-list-table-body]'},{'name': 'LinksListTableComponent', 'selector': 'links-list-table'},{'name': 'LinksListTableHeaderComponent', 'selector': '[links-list-table-header]'},{'name': 'LinksListTabsComponent', 'selector': 'links-list-tabs'},{'name': 'LogoutComponent', 'selector': 'logout'},{'name': 'LumeerLogoComponent', 'selector': 'lumeer-logo'},{'name': 'MapAttributeGroupComponent', 'selector': 'map-attribute-group'},{'name': 'MapAttributeSelectComponent', 'selector': 'map-attribute-select'},{'name': 'MapContentComponent', 'selector': 'map-content'},{'name': 'MapPanelComponent', 'selector': 'map-panel'},{'name': 'MapPerspectiveComponent', 'selector': 'map-perspective'},{'name': 'MapRenderComponent', 'selector': 'map-render'},{'name': 'NewUserComponent', 'selector': 'new-user'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OrganizationDetailComponent', 'selector': ''},{'name': 'OrganizationGroupsComponent', 'selector': ''},{'name': 'OrganizationRegistrationComponent', 'selector': ''},{'name': 'OrganizationSettingsComponent', 'selector': ''},{'name': 'OrganizationUsersComponent', 'selector': ''},{'name': 'OverwriteViewDialogComponent', 'selector': 'overwrite-view-dialog'},{'name': 'PaymentsListComponent', 'selector': 'payments-list'},{'name': 'PaymentsOrderComponent', 'selector': 'payments-order'},{'name': 'PaymentsPanelComponent', 'selector': 'payments-panel'},{'name': 'PaymentsStateComponent', 'selector': 'payments-state'},{'name': 'PostItAddDocumentComponent', 'selector': 'add-document'},{'name': 'PostItCollectionAddButtonComponent', 'selector': 'post-it-collection-add-button'},{'name': 'PostItCollectionComponent', 'selector': 'post-it-collection'},{'name': 'PostItCollectionImportButtonComponent', 'selector': 'post-it-collection-import-button'},{'name': 'PostItCollectionNameComponent', 'selector': 'post-it-collection-name'},{'name': 'PostItCollectionsComponent', 'selector': 'post-it-collections'},{'name': 'PostItDocumentCellComponent', 'selector': 'post-it-document-cell'},{'name': 'PostItDocumentComponent', 'selector': 'post-it-document'},{'name': 'PostItDocumentHeaderComponent', 'selector': 'post-it-document-header'},{'name': 'PostItPerspectiveComponent', 'selector': 'post-it-perspective'},{'name': 'PreviewResultsComponent', 'selector': 'preview-results'},{'name': 'PreviewResultsTableComponent', 'selector': 'preview-results-table'},{'name': 'PreviewResultsTabsComponent', 'selector': 'preview-results-tabs'},{'name': 'ProjectSettingsComponent', 'selector': ''},{'name': 'ProjectUsersComponent', 'selector': ''},{'name': 'QueryItemComponent', 'selector': 'query-item'},{'name': 'ResourceChooserComponent', 'selector': 'resource-chooser'},{'name': 'ResourceCodeInputComponent', 'selector': 'resource-code-input'},{'name': 'ResourceDetailComponent', 'selector': 'resource-detail'},{'name': 'ResourceHeaderComponent', 'selector': 'resource-header'},{'name': 'ResourceListComponent', 'selector': 'resource-list'},{'name': 'ResourceMenuComponent', 'selector': 'resource-menu'},{'name': 'ResourceNameInputComponent', 'selector': 'resource-name-input'},{'name': 'ResourcePostItComponent', 'selector': 'resource-post-it'},{'name': 'ResourceStatusLineComponent', 'selector': 'resource-status-line'},{'name': 'SearchAllComponent', 'selector': ''},{'name': 'SearchBoxComponent', 'selector': 'search-box'},{'name': 'SearchButtonComponent', 'selector': 'search-button'},{'name': 'SearchCollectionsComponent', 'selector': ''},{'name': 'SearchDocumentHeaderComponent', 'selector': 'search-document-header'},{'name': 'SearchDocumentsComponent', 'selector': 'search-documents'},{'name': 'SearchInputComponent', 'selector': 'search-input'},{'name': 'SearchLinksComponent', 'selector': ''},{'name': 'SearchPerspectiveComponent', 'selector': ''},{'name': 'SearchSuggestionsComponent', 'selector': 'search-suggestions'},{'name': 'SearchViewsComponent', 'selector': 'search-views'},{'name': 'SelectItemComponent', 'selector': 'select-item'},{'name': 'SessionExpiredComponent', 'selector': 'session-expired'},{'name': 'ShareUserComponent', 'selector': '[share-user]'},{'name': 'ShareViewCopyComponent', 'selector': 'share-view-copy'},{'name': 'ShareViewDialogComponent', 'selector': 'share-view-dialog'},{'name': 'ShareViewInputComponent', 'selector': 'share-view-input'},{'name': 'SizeSliderComponent', 'selector': 'size-slider'},{'name': 'SliderComponent', 'selector': 'slider'},{'name': 'SuggestionItemComponent', 'selector': 'search-suggestion-item'},{'name': 'TableAttributeSuggestionsComponent', 'selector': 'table-attribute-suggestions'},{'name': 'TableBodyComponent', 'selector': 'table-body'},{'name': 'TableCaptionComponent', 'selector': 'table-caption'},{'name': 'TableCellGroupComponent', 'selector': 'table-cell-group'},{'name': 'TableCollapsedCellComponent', 'selector': 'table-collapsed-cell'},{'name': 'TableCollapsedCellMenuComponent', 'selector': 'table-collapsed-cell-menu'},{'name': 'TableColumnContextMenuComponent', 'selector': 'table-column-context-menu'},{'name': 'TableColumnGroupComponent', 'selector': 'table-column-group'},{'name': 'TableDataCellComponent', 'selector': 'table-data-cell'},{'name': 'TableDataCellMenuComponent', 'selector': 'table-data-cell-menu'},{'name': 'TableHeaderAddButtonComponent', 'selector': 'table-header-add-button'},{'name': 'TableHeaderCollectionComponent', 'selector': 'table-header-collection'},{'name': 'TableHeaderComponent', 'selector': 'table-header'},{'name': 'TableHeaderLinkComponent', 'selector': 'table-header-link'},{'name': 'TableHiddenColumnComponent', 'selector': 'table-hidden-column'},{'name': 'TableHierarchyCellComponent', 'selector': 'table-hierarchy-cell'},{'name': 'TableHierarchyCellMenuComponent', 'selector': 'table-hierarchy-cell-menu'},{'name': 'TableHierarchyColumnComponent', 'selector': 'table-hierarchy-column'},{'name': 'TableLinkCellComponent', 'selector': 'table-link-cell'},{'name': 'TableLinkInfoComponent', 'selector': 'table-link-info'},{'name': 'TableLinkedRowComponent', 'selector': 'table-linked-row'},{'name': 'TableLinkedRowsComponent', 'selector': 'table-linked-rows'},{'name': 'TablePerspectiveComponent', 'selector': 'table-perspective'},{'name': 'TablePrimaryRowComponent', 'selector': 'table-primary-row'},{'name': 'TableRowGroupComponent', 'selector': 'table-row-group'},{'name': 'TableRowGroupFooterComponent', 'selector': 'table-row-group-footer'},{'name': 'TableRowGroupHeaderComponent', 'selector': 'table-row-group-header'},{'name': 'TableRowNumbersComponent', 'selector': 'table-row-numbers'},{'name': 'TableRowsComponent', 'selector': 'table-rows'},{'name': 'TableSingleColumnComponent', 'selector': 'table-single-column'},{'name': 'TagComponent', 'selector': 'tag'},{'name': 'TopPanelComponent', 'selector': 'top-panel'},{'name': 'TopPanelWrapperComponent', 'selector': 'top-panel-wrapper'},{'name': 'UserComponent', 'selector': '[user]'},{'name': 'UserGroupsComponent', 'selector': 'user-groups'},{'name': 'UserListComponent', 'selector': 'user-list'},{'name': 'UserMenuComponent', 'selector': 'user-menu'},{'name': 'UserPanelComponent', 'selector': 'user-panel'},{'name': 'UsersComponent', 'selector': 'users'},{'name': 'ViewComponent', 'selector': ''},{'name': 'ViewControlsComponent', 'selector': 'view-controls'},{'name': 'ViewDetailComponent', 'selector': 'view-detail'},{'name': 'ViewLoadingComponent', 'selector': 'view-loading'},{'name': 'WorkspaceChooserComponent', 'selector': 'workspace-chooser'},{'name': 'WorkspacePanelComponent', 'selector': 'workspace-panel'}];
+    var DIRECTIVES = [{'name': 'DraggableDirective', 'selector': '[lmrDraggable]'},{'name': 'DropTargetDirective', 'selector': '[lmrDropTarget]'},{'name': 'LayoutItemDirective', 'selector': '[layout-item]'},{'name': 'NgVarDirective', 'selector': '[ngVar]'},{'name': 'PerspectiveDirective', 'selector': '[perspective]'},{'name': 'RemovePlaceholderOnFocusDirective', 'selector': '[remove-placeholder-on-focus]'},{'name': 'SearchResultsDirective', 'selector': '[search-results]'},{'name': 'TableEditableCellDirective', 'selector': '[tableEditableCell]'},{'name': 'TrimValueAccessor', 'selector': 'input[trim], textarea[trim], div[trim]'}];
+    var ACTUAL_COMPONENT = {'name': 'PostItDocumentCellComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PostItDocumentCellComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

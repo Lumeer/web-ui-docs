@@ -1,0 +1,936 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lumeer Web UI documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Lumeer Web UI documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MapRenderComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/view/perspectives/map/content/render/map-render.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                <code><a href="../interfaces/View.html" target="_self" >AfterViewInit</a></code>
+                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>map-render</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>map-render.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./map-render.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#leafletMap">leafletMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mapElementId">mapElementId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#markersLayer">markersLayer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#addMarkersToMap">addMarkersToMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initMap">initMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnChanges">ngOnChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#map">map</a>
+                            </li>
+                            <li>
+                                <a href="#markers">markers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ngZone: <a href="https://angular.io/api/core/NgZone" target="_blank">NgZone</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ngZone</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/NgZone" target="_blank" >NgZone</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="map"></a>
+                        <code>map</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code><a href="../interfaces/MapModel.html" target="_self" >MapModel</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:44</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="markers"></a>
+                        <code>markers</code>
+                    </td>
+                    <td class="col-md-10">
+                            <p>
+                            <em>Type :</em>    <code>Marker[]</code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:47</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addMarkersToMap"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            addMarkersToMap
+                            </b>
+                            <a href="#addMarkersToMap"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>addMarkersToMap(markers: Marker[])</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>markers</td>
+                                                        <td>
+                                                                    <code>Marker[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initMap"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            initMap
+                            </b>
+                            <a href="#initMap"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>initMap(config: <a href="../interfaces/MapConfig.html">MapConfig</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>config</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/MapConfig.html" target="_self" >MapConfig</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngAfterViewInit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngAfterViewInit
+                            </b>
+                            <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngAfterViewInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnChanges"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnChanges
+                            </b>
+                            <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>changes</td>
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnDestroy"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnDestroy
+                            </b>
+                            <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnDestroy()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="leafletMap"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            leafletMap
+                            </b>
+                            <a href="#leafletMap"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>leafletMap:     <code>Map</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Map</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mapElementId"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            mapElementId
+                            </b>
+                            <a href="#mapElementId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>mapElementId:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="markersLayer"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            markersLayer
+                            </b>
+                            <a href="#markersLayer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>markersLayer:     <code><a href="../interfaces/Group.html" target="_self" >LayerGroup</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/Group.html" target="_self" >LayerGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/view/perspectives/map/content/render/map-render.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  NgZone,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  SimpleChanges,
+} from &#x27;@angular/core&#x27;;
+import {LayerGroup, Map, Marker} from &#x27;leaflet&#x27;;
+import {createMapTileLayer} from &#x27;../../../../../core/store/maps/map-tiles&#x27;;
+import {MapConfig, MapModel} from &#x27;../../../../../core/store/maps/map.model&#x27;;
+import {createLeafletMap} from &#x27;../../../../../core/store/maps/map.utils&#x27;;
+
+@Component({
+  selector: &#x27;map-render&#x27;,
+  templateUrl: &#x27;./map-render.component.html&#x27;,
+  styleUrls: [&#x27;./map-render.component.scss&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class MapRenderComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy {
+  @Input()
+  public map: MapModel;
+
+  @Input()
+  public markers: Marker[];
+
+  public mapElementId: string;
+
+  private leafletMap: Map;
+  private markersLayer: LayerGroup;
+
+  constructor(private ngZone: NgZone) {}
+
+  public ngOnInit() {
+    this.mapElementId &#x3D; &#x60;map-${this.map.id}&#x60;;
+  }
+
+  public ngOnChanges(changes: SimpleChanges) {
+    if (changes.markers &amp;&amp; this.markers) {
+      this.ngZone.runOutsideAngular(() &#x3D;&gt; setTimeout(() &#x3D;&gt; this.addMarkersToMap(this.markers)));
+    }
+  }
+
+  public ngAfterViewInit() {
+    this.ngZone.runOutsideAngular(() &#x3D;&gt; this.initMap(this.map.config));
+  }
+
+  private initMap(config: MapConfig) {
+    this.leafletMap &#x3D; createLeafletMap(this.mapElementId, config);
+    setTimeout(() &#x3D;&gt; this.leafletMap.invalidateSize(), 100);
+
+    createMapTileLayer(config.tiles).addTo(this.leafletMap);
+
+    this.leafletMap.zoomControl.setPosition(&#x27;bottomright&#x27;);
+  }
+
+  private addMarkersToMap(markers: Marker[]) {
+    if (this.markersLayer) {
+      this.leafletMap.removeLayer(this.markersLayer);
+    }
+
+    this.markersLayer &#x3D; new LayerGroup(markers);
+    this.markersLayer.addTo(this.leafletMap);
+  }
+
+  public ngOnDestroy() {
+    if (this.leafletMap) {
+      this.leafletMap.remove();
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div [id]&#x3D;&quot;mapElementId&quot;&gt;&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div [id]="mapElementId"></div></div>'
+    var COMPONENTS = [{'name': 'AgreementComponent', 'selector': 'agreement'},{'name': 'AppComponent', 'selector': 'lmr-app'},{'name': 'AttributeConditionComponent', 'selector': 'attribute-condition'},{'name': 'AttributeValueComponent', 'selector': 'attribute-value'},{'name': 'AuthCallbackComponent', 'selector': 'auth-callback'},{'name': 'ChartConfigComponent', 'selector': 'chart-config'},{'name': 'ChartPerspectiveComponent', 'selector': 'chart-perspective'},{'name': 'ChartVisualizationComponent', 'selector': 'chart-visualization'},{'name': 'CollapsibleSidebarComponent', 'selector': 'collapsible-sidebar'},{'name': 'CollapsibleSidebarToggleComponent', 'selector': 'collapsible-sidebar-toggle'},{'name': 'CollectionAttributesComponent', 'selector': ''},{'name': 'CollectionLinkTypesComponent', 'selector': ''},{'name': 'CollectionNameInputComponent', 'selector': 'collection-name-input'},{'name': 'CollectionSettingsComponent', 'selector': ''},{'name': 'CollectionUsersComponent', 'selector': ''},{'name': 'ColorPickerComponent', 'selector': 'color-picker'},{'name': 'CommentsComponent', 'selector': 'comments'},{'name': 'ConditionSuggestionsComponent', 'selector': 'condition-suggestions'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ControlsToggleComponent', 'selector': 'controls-toggle'},{'name': 'CreateCollectionDialogComponent', 'selector': 'create-collection-dialog'},{'name': 'CreateLinkDialogComponent', 'selector': 'create-link-dialog'},{'name': 'CreateResourceDialogComponent', 'selector': 'create-resource-dialog'},{'name': 'DetailPerspectiveComponent', 'selector': 'detail-perspective'},{'name': 'DialogBaseComponent', 'selector': 'dialog-base'},{'name': 'DialogWrapperComponent', 'selector': 'dialog-wrapper'},{'name': 'DocumentDetailComponent', 'selector': 'document-detail'},{'name': 'DocumentHintsComponent', 'selector': 'document-hints'},{'name': 'EmptyCollectionsComponent', 'selector': 'empty-collections'},{'name': 'EmptyDataComponent', 'selector': 'empty-data'},{'name': 'EmptyDocumentsComponent', 'selector': 'empty-documents'},{'name': 'EmptyMapComponent', 'selector': 'empty-map'},{'name': 'EmptyPostItsComponent', 'selector': 'empty-post-its'},{'name': 'EmptyRecordsComponent', 'selector': 'empty-records'},{'name': 'EmptySearchComponent', 'selector': 'empty-search'},{'name': 'EmptyStateComponent', 'selector': 'empty-state'},{'name': 'EmptyViewsComponent', 'selector': 'empty-views'},{'name': 'FeedbackDialogComponent', 'selector': 'feedback-dialog'},{'name': 'FilterBoxComponent', 'selector': 'filter-box'},{'name': 'GroupsSuggestionsComponent', 'selector': 'group-suggestions'},{'name': 'HomeComponent', 'selector': ''},{'name': 'IconComponent', 'selector': 'icon-chooser'},{'name': 'IconPickerComponent', 'selector': 'icon-picker'},{'name': 'IconsPresenterComponent', 'selector': 'icons-presenter'},{'name': 'InputBoxComponent', 'selector': 'input-box'},{'name': 'InvalidQueryComponent', 'selector': 'invalid-query'},{'name': 'KeyValueComponent', 'selector': 'key-value'},{'name': 'LinkNameInputComponent', 'selector': 'link-name-input'},{'name': 'LinkTypeComponent', 'selector': '[link-type]'},{'name': 'LinksComponent', 'selector': 'links'},{'name': 'LinksListComponent', 'selector': 'links-list'},{'name': 'LinksListTableBodyComponent', 'selector': '[links-list-table-body]'},{'name': 'LinksListTableComponent', 'selector': 'links-list-table'},{'name': 'LinksListTableHeaderComponent', 'selector': '[links-list-table-header]'},{'name': 'LinksListTabsComponent', 'selector': 'links-list-tabs'},{'name': 'LogoutComponent', 'selector': 'logout'},{'name': 'LumeerLogoComponent', 'selector': 'lumeer-logo'},{'name': 'MapAttributeGroupComponent', 'selector': 'map-attribute-group'},{'name': 'MapAttributeSelectComponent', 'selector': 'map-attribute-select'},{'name': 'MapContentComponent', 'selector': 'map-content'},{'name': 'MapPanelComponent', 'selector': 'map-panel'},{'name': 'MapPerspectiveComponent', 'selector': 'map-perspective'},{'name': 'MapRenderComponent', 'selector': 'map-render'},{'name': 'NewUserComponent', 'selector': 'new-user'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OrganizationDetailComponent', 'selector': ''},{'name': 'OrganizationGroupsComponent', 'selector': ''},{'name': 'OrganizationRegistrationComponent', 'selector': ''},{'name': 'OrganizationSettingsComponent', 'selector': ''},{'name': 'OrganizationUsersComponent', 'selector': ''},{'name': 'OverwriteViewDialogComponent', 'selector': 'overwrite-view-dialog'},{'name': 'PaymentsListComponent', 'selector': 'payments-list'},{'name': 'PaymentsOrderComponent', 'selector': 'payments-order'},{'name': 'PaymentsPanelComponent', 'selector': 'payments-panel'},{'name': 'PaymentsStateComponent', 'selector': 'payments-state'},{'name': 'PostItAddDocumentComponent', 'selector': 'add-document'},{'name': 'PostItCollectionAddButtonComponent', 'selector': 'post-it-collection-add-button'},{'name': 'PostItCollectionComponent', 'selector': 'post-it-collection'},{'name': 'PostItCollectionImportButtonComponent', 'selector': 'post-it-collection-import-button'},{'name': 'PostItCollectionNameComponent', 'selector': 'post-it-collection-name'},{'name': 'PostItCollectionsComponent', 'selector': 'post-it-collections'},{'name': 'PostItDocumentCellComponent', 'selector': 'post-it-document-cell'},{'name': 'PostItDocumentComponent', 'selector': 'post-it-document'},{'name': 'PostItDocumentHeaderComponent', 'selector': 'post-it-document-header'},{'name': 'PostItPerspectiveComponent', 'selector': 'post-it-perspective'},{'name': 'PreviewResultsComponent', 'selector': 'preview-results'},{'name': 'PreviewResultsTableComponent', 'selector': 'preview-results-table'},{'name': 'PreviewResultsTabsComponent', 'selector': 'preview-results-tabs'},{'name': 'ProjectSettingsComponent', 'selector': ''},{'name': 'ProjectUsersComponent', 'selector': ''},{'name': 'QueryItemComponent', 'selector': 'query-item'},{'name': 'ResourceChooserComponent', 'selector': 'resource-chooser'},{'name': 'ResourceCodeInputComponent', 'selector': 'resource-code-input'},{'name': 'ResourceDetailComponent', 'selector': 'resource-detail'},{'name': 'ResourceHeaderComponent', 'selector': 'resource-header'},{'name': 'ResourceListComponent', 'selector': 'resource-list'},{'name': 'ResourceMenuComponent', 'selector': 'resource-menu'},{'name': 'ResourceNameInputComponent', 'selector': 'resource-name-input'},{'name': 'ResourcePostItComponent', 'selector': 'resource-post-it'},{'name': 'ResourceStatusLineComponent', 'selector': 'resource-status-line'},{'name': 'SearchAllComponent', 'selector': ''},{'name': 'SearchBoxComponent', 'selector': 'search-box'},{'name': 'SearchButtonComponent', 'selector': 'search-button'},{'name': 'SearchCollectionsComponent', 'selector': ''},{'name': 'SearchDocumentHeaderComponent', 'selector': 'search-document-header'},{'name': 'SearchDocumentsComponent', 'selector': 'search-documents'},{'name': 'SearchInputComponent', 'selector': 'search-input'},{'name': 'SearchLinksComponent', 'selector': ''},{'name': 'SearchPerspectiveComponent', 'selector': ''},{'name': 'SearchSuggestionsComponent', 'selector': 'search-suggestions'},{'name': 'SearchViewsComponent', 'selector': 'search-views'},{'name': 'SelectItemComponent', 'selector': 'select-item'},{'name': 'SessionExpiredComponent', 'selector': 'session-expired'},{'name': 'ShareUserComponent', 'selector': '[share-user]'},{'name': 'ShareViewCopyComponent', 'selector': 'share-view-copy'},{'name': 'ShareViewDialogComponent', 'selector': 'share-view-dialog'},{'name': 'ShareViewInputComponent', 'selector': 'share-view-input'},{'name': 'SizeSliderComponent', 'selector': 'size-slider'},{'name': 'SliderComponent', 'selector': 'slider'},{'name': 'SuggestionItemComponent', 'selector': 'search-suggestion-item'},{'name': 'TableAttributeSuggestionsComponent', 'selector': 'table-attribute-suggestions'},{'name': 'TableBodyComponent', 'selector': 'table-body'},{'name': 'TableCaptionComponent', 'selector': 'table-caption'},{'name': 'TableCellGroupComponent', 'selector': 'table-cell-group'},{'name': 'TableCollapsedCellComponent', 'selector': 'table-collapsed-cell'},{'name': 'TableCollapsedCellMenuComponent', 'selector': 'table-collapsed-cell-menu'},{'name': 'TableColumnContextMenuComponent', 'selector': 'table-column-context-menu'},{'name': 'TableColumnGroupComponent', 'selector': 'table-column-group'},{'name': 'TableDataCellComponent', 'selector': 'table-data-cell'},{'name': 'TableDataCellMenuComponent', 'selector': 'table-data-cell-menu'},{'name': 'TableHeaderAddButtonComponent', 'selector': 'table-header-add-button'},{'name': 'TableHeaderCollectionComponent', 'selector': 'table-header-collection'},{'name': 'TableHeaderComponent', 'selector': 'table-header'},{'name': 'TableHeaderLinkComponent', 'selector': 'table-header-link'},{'name': 'TableHiddenColumnComponent', 'selector': 'table-hidden-column'},{'name': 'TableHierarchyCellComponent', 'selector': 'table-hierarchy-cell'},{'name': 'TableHierarchyCellMenuComponent', 'selector': 'table-hierarchy-cell-menu'},{'name': 'TableHierarchyColumnComponent', 'selector': 'table-hierarchy-column'},{'name': 'TableLinkCellComponent', 'selector': 'table-link-cell'},{'name': 'TableLinkInfoComponent', 'selector': 'table-link-info'},{'name': 'TableLinkedRowComponent', 'selector': 'table-linked-row'},{'name': 'TableLinkedRowsComponent', 'selector': 'table-linked-rows'},{'name': 'TablePerspectiveComponent', 'selector': 'table-perspective'},{'name': 'TablePrimaryRowComponent', 'selector': 'table-primary-row'},{'name': 'TableRowGroupComponent', 'selector': 'table-row-group'},{'name': 'TableRowGroupFooterComponent', 'selector': 'table-row-group-footer'},{'name': 'TableRowGroupHeaderComponent', 'selector': 'table-row-group-header'},{'name': 'TableRowNumbersComponent', 'selector': 'table-row-numbers'},{'name': 'TableRowsComponent', 'selector': 'table-rows'},{'name': 'TableSingleColumnComponent', 'selector': 'table-single-column'},{'name': 'TagComponent', 'selector': 'tag'},{'name': 'TopPanelComponent', 'selector': 'top-panel'},{'name': 'TopPanelWrapperComponent', 'selector': 'top-panel-wrapper'},{'name': 'UserComponent', 'selector': '[user]'},{'name': 'UserGroupsComponent', 'selector': 'user-groups'},{'name': 'UserListComponent', 'selector': 'user-list'},{'name': 'UserMenuComponent', 'selector': 'user-menu'},{'name': 'UserPanelComponent', 'selector': 'user-panel'},{'name': 'UsersComponent', 'selector': 'users'},{'name': 'ViewComponent', 'selector': ''},{'name': 'ViewControlsComponent', 'selector': 'view-controls'},{'name': 'ViewDetailComponent', 'selector': 'view-detail'},{'name': 'ViewLoadingComponent', 'selector': 'view-loading'},{'name': 'WorkspaceChooserComponent', 'selector': 'workspace-chooser'},{'name': 'WorkspacePanelComponent', 'selector': 'workspace-panel'}];
+    var DIRECTIVES = [{'name': 'DraggableDirective', 'selector': '[lmrDraggable]'},{'name': 'DropTargetDirective', 'selector': '[lmrDropTarget]'},{'name': 'LayoutItemDirective', 'selector': '[layout-item]'},{'name': 'NgVarDirective', 'selector': '[ngVar]'},{'name': 'PerspectiveDirective', 'selector': '[perspective]'},{'name': 'RemovePlaceholderOnFocusDirective', 'selector': '[remove-placeholder-on-focus]'},{'name': 'SearchResultsDirective', 'selector': '[search-results]'},{'name': 'TableEditableCellDirective', 'selector': '[tableEditableCell]'},{'name': 'TrimValueAccessor', 'selector': 'input[trim], textarea[trim], div[trim]'}];
+    var ACTUAL_COMPONENT = {'name': 'MapRenderComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MapRenderComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
